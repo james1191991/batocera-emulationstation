@@ -1,3 +1,18 @@
+Note
+==========
+
+This is a modified version of batocera-emulationstation.
+
+It's used for my personal researches and customizations, mainly targeted for ODROID-GO Super handheld device.
+
+**And it may contains some problems or unstable for daily use.**
+
+Please fork from the upstream repository:
+
+https://github.com/batocera-linux/batocera-emulationstation
+
+----------
+
 EmulationStation
 ================
 
