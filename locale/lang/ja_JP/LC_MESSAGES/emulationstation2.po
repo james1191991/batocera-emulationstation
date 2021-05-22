@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: batocera-es v31(2021/05/01)\n"
+"Project-Id-Version: batocera-es v31(2021/05/19)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-17 07:48+0200\n"
-"PO-Revision-Date: 2021-05-02 19:31+0900\n"
+"POT-Creation-Date: 2021-05-21 20:48+0200\n"
+"PO-Revision-Date: 2021-05-19 19:30+0900\n"
 "Last-Translator: mikakunin\n"
 "Language-Team: mikakunin\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "UPDATE AVAILABLE"
@@ -154,6 +154,18 @@ msgstr "ジャンル"
 msgid "enter game genre"
 msgstr "ジャンルを入力"
 
+msgid "Game family"
+msgstr ""
+
+msgid "enter game family"
+msgstr ""
+
+msgid "Genres"
+msgstr ""
+
+msgid "enter game genres"
+msgstr ""
+
 msgid "Arcade system"
 msgstr "アーケードシステム"
 
@@ -260,7 +272,7 @@ msgid "vertical arcade"
 msgstr "縦表示アーケード"
 
 msgid "lightgun games"
-msgstr ""
+msgstr "ガンコントローラ ゲーム"
 
 msgid "collections"
 msgstr "コレクション"
@@ -444,6 +456,9 @@ msgstr "コレクションを選択"
 
 msgid "AUTOMATIC COLLECTIONS"
 msgstr "自動コレクション"
+
+msgid "PER GENRE"
+msgstr ""
 
 msgid "ARCADE SYSTEMS"
 msgstr "アーケードシステム"
@@ -1283,9 +1298,10 @@ msgid "TOOLS"
 msgstr "ツール"
 
 msgid "ENABLE PUBLIC WEB ACCESS"
-msgstr ""
+msgstr "パブリックWebアクセスを有効"
 
-msgid "Allow public web access API using "
+#, c-format
+msgid "Allow public web access API using %s"
 msgstr ""
 
 msgid "A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"
@@ -1384,10 +1400,10 @@ msgid "SWITCH A/B BUTTONS IN EMULATIONSTATION"
 msgstr "ESメニューでの A/B ボタンの入れ替え"
 
 msgid "ACCESS GAME OPTIONS WITH NORTH BUTTON"
-msgstr ""
+msgstr "△(上)ボタンでゲームオプションを開く"
 
 msgid "Inverts north button (savestates) & long press south (game options)"
-msgstr ""
+msgstr "△(上)を反転（ステートセーブ）、×（下）を長押し（ゲームオプション）"
 
 msgid "CONTROL EMULATIONSTATION ONLY WITH FIRST JOYSTICK"
 msgstr "最初のコントローラだけでESメニューを操作する"
@@ -1456,7 +1472,7 @@ msgid "POWER SAVER MODES"
 msgstr "省電力モード(rpi用)"
 
 msgid "UI MODE"
-msgstr "UI　モード"
+msgstr "UI モード"
 
 msgid ""
 "You are changing the UI to a restricted mode:\n"
@@ -1618,10 +1634,10 @@ msgid "AUTO SAVE/LOAD"
 msgstr "自動セーブ/ロード"
 
 msgid "SHOW SAVE SNAPSHOTS"
-msgstr "保存時スナップショットを表示"
+msgstr "保存時スナップショットを表示する"
 
 msgid "SHOW SNAPSHOTS IF NOT EMPTY"
-msgstr "スナップショットがあるなら表示する"
+msgstr "スナップショットがあれば表示する"
 
 msgid "SHADERS SET"
 msgstr "シェーダー設定"
@@ -1953,6 +1969,9 @@ msgstr "このドライブをフォーマットしますか？"
 msgid "EDIT METADATA"
 msgstr "メタ情報を編集"
 
+msgid "GENRES"
+msgstr ""
+
 msgid ""
 "SOME FILES YOU LINKED ARE LOCATED OUTSIDE THE GAMELIST PATH.\n"
 "DO YOU WANT TO USE A COPY OF THESE FILES RELATIVE TO THE GAMELIST ?"
@@ -2218,6 +2237,9 @@ msgstr "「ゲームリストを更新」で変更を適用します。"
 msgid "GENRE"
 msgstr "ジャンル"
 
+msgid "FAMILY"
+msgstr ""
+
 msgid "PLAYERS"
 msgstr "プレイヤー数"
 
@@ -2435,3 +2457,6 @@ msgstr "%d 分"
 #, c-format
 msgid "%d s"
 msgstr "%d 秒"
+
+#~ msgid "Allow public web access API using "
+#~ msgstr "パブリックWebアクセスAPIを許可 "

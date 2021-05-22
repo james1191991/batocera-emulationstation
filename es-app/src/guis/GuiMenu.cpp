@@ -730,7 +730,7 @@ void GuiMenu::openDeveloperSettings()
 
 	auto webAccess = std::make_shared<SwitchComponent>(mWindow);
 	webAccess->setState(Settings::getInstance()->getBool("PublicWebAccess"));
-	s->addWithDescription(_("ENABLE PUBLIC WEB ACCESS"), _("Allow public web access API using ") + " http://" + hostName + ":1234", webAccess);
+	s->addWithDescription(_("ENABLE PUBLIC WEB ACCESS"), Utils::String::format(_("Allow public web access API using %s").c_str(), std::string("http://" + hostName + ":1234").c_str()), webAccess);
 	s->addSaveFunc([webAccess, window]
 	{ 
 		if (Settings::getInstance()->setBool("PublicWebAccess", webAccess->getState()))
@@ -1688,7 +1688,7 @@ void GuiMenu::openRetroachievementsSettings()
 	auto installedRSounds = ApiSystem::getInstance()->getRetroachievementsSoundsList();
 	if (installedRSounds.size() > 0)
 	{
-		std::string currentSound = SystemConf::getInstance()->get("global.retroachievements_sound");
+		std::string currentSound = SystemConf::getInstance()->get("global.retroachievements.sound");
 
 		auto rsounds_choices = std::make_shared<OptionListComponent<std::string> >(mWindow, _("RETROACHIEVEMENTS UNLOCK SOUND"), false);
 		rsounds_choices->add(_("none"), "none", currentSound.empty() || currentSound == "none");
@@ -1700,7 +1700,7 @@ void GuiMenu::openRetroachievementsSettings()
 			rsounds_choices->selectFirstItem();
 
 		retroachievements->addWithLabel(_("UNLOCK SOUND"), rsounds_choices);
-		retroachievements->addSaveFunc([rsounds_choices] { SystemConf::getInstance()->set("global.retroachievements_sound", rsounds_choices->getSelected()); });
+		retroachievements->addSaveFunc([rsounds_choices] { SystemConf::getInstance()->set("global.retroachievements.sound", rsounds_choices->getSelected()); });
 	}
 
 	// retroachievements, username, password
