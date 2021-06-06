@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-04 20:31+0200\n"
+"POT-Creation-Date: 2021-06-05 21:07+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: evoflash <evoflash@me.com>\n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.0\n"
 
 msgid "UPDATE AVAILABLE"
 msgstr "MISE À JOUR DISPONIBLE"
@@ -849,7 +849,7 @@ msgstr "ETES-VOUS SUR(E) ?"
 
 #, c-format
 msgid "UPDATING %s"
-msgstr ""
+msgstr "MISE À JOUR DE %s"
 
 msgid "UPDATING BATOCERA"
 msgstr "MISE À JOUR DE BATOCERA"
@@ -865,9 +865,11 @@ msgstr "VOULEZ-VOUS VRAIMENT METTRE À JOUR ?"
 
 #, c-format
 msgid ""
-"YOU ARE CURRENTLY USING VERSION : %s\r\n"
+"YOU ARE CURRENTLY USING VERSION : %s\n"
 "DO YOU WANT TO UPDATE TO VERSION : %s ?"
 msgstr ""
+"VOUS UTILISEZ ACTUELLEMENT LA VERSION : %s\n"
+"VOULEZ-VOUS METTRE À JOUR EN VERSION : %s ? "
 
 msgid "NETWORK CONNECTION NEEDED"
 msgstr "CONNEXION RÉSEAU NÉCESSAIRE"
@@ -1143,7 +1145,7 @@ msgid "GL VERSION"
 msgstr "GL VERSION"
 
 msgid "GLSL VERSION"
-msgstr ""
+msgstr "VERSION GLSL"
 
 msgid "MAIN MENU"
 msgstr "MENU PRINCIPAL"
@@ -2479,6 +2481,3 @@ msgstr "%d m"
 #, c-format
 msgid "%d s"
 msgstr "%d s"
-
-#~ msgid "UPDATING EMULATIONSTATION"
-#~ msgstr "MISE À JOUR DE EMULATIONSTATION"
