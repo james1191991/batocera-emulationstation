@@ -734,8 +734,12 @@ void GuiMenu::openDeveloperSettings()
 	s->addWithDescription(_("ENABLE PUBLIC WEB ACCESS"), Utils::String::format(_("Allow public web access API using %s").c_str(), std::string("http://" + hostName + ":1234").c_str()), webAccess);
 	s->addSaveFunc([webAccess, window]
 	{ 
-		if (Settings::getInstance()->setBool("PublicWebAccess", webAccess->getState()))
-			window->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+	  if (Settings::getInstance()->setBool("PublicWebAccess", webAccess->getState())) {
+	    window->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+	    if (Settings::getInstance()->getBool("ExitOnRebootRequired")) {
+	      quitES(QuitMode::QUIT);
+	    }
+	  }
 	});
 
 
@@ -1200,7 +1204,7 @@ void GuiMenu::openSystemSettings_batocera()
 	language_choice->add("POLISH",               "pl_PL", language == "pl_PL");
 	language_choice->add("PORTUGUES BRASILEIRO", "pt_BR", language == "pt_BR");
 	language_choice->add("PORTUGUES PORTUGAL",   "pt_PT", language == "pt_PT");
-	language_choice->add("RUSSIAN",              "ru_RU", language == "ru_RU");
+	language_choice->add("РУССКИЙ",              "ru_RU", language == "ru_RU");
 	language_choice->add("SVENSKA", 	     "sv_SE", language == "sv_SE");
 	language_choice->add("TÜRKÇE",  	     "tr_TR", language == "tr_TR");
 	language_choice->add("Українська",           "uk_UA", language == "uk_UA");
@@ -1353,6 +1357,9 @@ void GuiMenu::openSystemSettings_batocera()
 			SystemConf::getInstance()->set("global.videooutput", optionsVideo->getSelected());
 			SystemConf::getInstance()->saveSystemConf();
 			mWindow->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+			if (Settings::getInstance()->getBool("ExitOnRebootRequired")) {
+			  quitES(QuitMode::QUIT);
+			}
 		}
 	});
 
@@ -1405,6 +1412,67 @@ void GuiMenu::openSystemSettings_batocera()
 		}
 		SystemConf::getInstance()->saveSystemConf();
 	});
+
+	// video rotation
+	auto optionsRotation = std::make_shared<OptionListComponent<std::string> >(mWindow, _("SCREEN ROTATION"), false);
+
+	std::string selectedRotation = SystemConf::getInstance()->get("display.rotate");
+	if (selectedRotation.empty())
+		selectedRotation = "auto";
+
+	optionsRotation->add(_("AUTO"),              "auto", selectedRotation == "auto");
+	optionsRotation->add(_("LEFT ROTATION"),        "3", selectedRotation == "3");
+	optionsRotation->add(_("RIGHT ROTATION"),       "1", selectedRotation == "1");
+	optionsRotation->add(_("INVERTED ROTATION"),    "2", selectedRotation == "2");
+
+	s->addWithLabel(_("SCREEN ROTATION"), optionsRotation);
+
+	s->addSaveFunc([this, optionsRotation, selectedRotation]
+	{
+	  if (optionsRotation->changed()) {
+	    SystemConf::getInstance()->set("display.rotate", optionsRotation->getSelected());
+	    SystemConf::getInstance()->saveSystemConf();
+
+	    mWindow->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+	    if (Settings::getInstance()->getBool("ExitOnRebootRequired")) {
+	      quitES(QuitMode::QUIT);
+	    }
+	  }
+	});
+
+	// splash
+	auto optionsSplash = std::make_shared<OptionListComponent<std::string> >(mWindow, _("BOOT SPLASH"), false);
+
+	std::string enabledSplash = SystemConf::getInstance()->get("splash.screen.enabled");
+	std::string soundSplash   = SystemConf::getInstance()->get("splash.screen.sound");
+
+	std::string selectedSplash = "auto";
+	if(enabledSplash == "0")      selectedSplash = "nosplash";
+	else if(soundSplash   == "0") selectedSplash = "silentsplash";
+
+	optionsSplash->add(_("AUTO"),          "auto", selectedSplash == "auto");
+	optionsSplash->add(_("SILENT SPLASH"), "silentsplash", selectedSplash == "silentsplash");
+	optionsSplash->add(_("NO SPLASH"),     "nosplash", selectedSplash == "nosplash");
+
+	s->addWithLabel(_("BOOT SPLASH"), optionsSplash);
+
+	s->addSaveFunc([this, optionsSplash, selectedSplash]
+	{
+	  if (optionsSplash->changed()) {
+	    if(optionsSplash->getSelected() == "nosplash") {
+	      SystemConf::getInstance()->set("splash.screen.enabled", "0");
+	    } else {
+	      SystemConf::getInstance()->set("splash.screen.enabled", "1");
+	      if(optionsSplash->getSelected() == "silentsplash") {
+		SystemConf::getInstance()->set("splash.screen.sound", "0");
+	      } else {
+		SystemConf::getInstance()->set("splash.screen.sound", "1");
+	      }
+	    }
+	    SystemConf::getInstance()->saveSystemConf();
+	  }
+	});
+
 #else
 	if (!ApiSystem::getInstance()->isScriptingSupported(ApiSystem::GAMESETTINGS))
 	{
@@ -1596,8 +1664,9 @@ void GuiMenu::openSystemSettings_batocera()
 				reboot = true;
 			}
 
-			if (reboot)
-				window->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+			if (reboot) {
+			  window->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+			}
 		});
 		mWindow->pushGui(securityGui);
 	});
@@ -1609,6 +1678,7 @@ void GuiMenu::openSystemSettings_batocera()
 	s->addSaveFunc([overclock_choice, window, language_choice, language, optionsStorage, selectedStorage, s] 
 	{
 		bool reboot = false;
+		bool rebootForLanguage = false;
 		if (optionsStorage->changed()) 
 		{
 			ApiSystem::getInstance()->setStorage(optionsStorage->getSelected());
@@ -1631,12 +1701,20 @@ void GuiMenu::openSystemSettings_batocera()
 				s->setVariable("reloadGuiMenu", true);
 #ifdef HAVE_INTL
 				reboot = true;
+				rebootForLanguage = true;
 #endif
 			}			
 		}
 
-		if (reboot)
-			window->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+		if (reboot) {
+		  window->displayNotificationMessage(_U("\uF011  ") + _("A REBOOT OF THE SYSTEM IS REQUIRED TO APPLY THE NEW CONFIGURATION"));
+
+		  if(rebootForLanguage) {
+		    if (Settings::getInstance()->getBool("ExitOnRebootRequired")) {
+		      quitES(QuitMode::QUIT);
+		    }
+		  }
+		}
 
 	});
 
@@ -2013,7 +2091,7 @@ void GuiMenu::openGamesSettings_batocera()
 		lang_choices->add("NORWEGIAN", "Nn", currentLang == "Nn");
 		lang_choices->add("POLISH", "Po", currentLang == "Po");
 		lang_choices->add("ROMANIAN", "Ro", currentLang == "Ro");
-		lang_choices->add("RUSSIAN", "Ru", currentLang == "Ru");
+		lang_choices->add("РУССКИЙ", "Ru", currentLang == "Ru");
 		lang_choices->add("SVENSKA", "Sv", currentLang == "Sv");
 		lang_choices->add("TÜRKÇE", "Tr", currentLang == "Tr");
 		lang_choices->add("简体中文", "Zh", currentLang == "Zh");
@@ -2159,13 +2237,13 @@ void GuiMenu::updateGameLists(Window* window, bool confirm)
 	
 	if (!confirm)
 	{
-		ViewController::reloadAllGames(window, true);
+		ViewController::reloadAllGames(window, true, true);
 		return;
 	}
 
 	window->pushGui(new GuiMsgBox(window, _("REALLY UPDATE GAMES LISTS ?"), _("YES"), [window]
 		{
-		ViewController::reloadAllGames(window, true);
+		ViewController::reloadAllGames(window, true, true);
 		}, 
 		_("NO"), nullptr));
 }
