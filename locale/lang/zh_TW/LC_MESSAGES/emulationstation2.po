@@ -1515,25 +1515,25 @@ msgid "AUDIO OUTPUT"
 msgstr "聲音輸出"
 
 msgid "SCREEN ROTATION"
-msgstr ""
+msgstr "螢幕旋轉"
 
 msgid "LEFT ROTATION"
-msgstr ""
+msgstr "向左旋轉"
 
 msgid "RIGHT ROTATION"
-msgstr ""
+msgstr "向右旋轉"
 
 msgid "INVERTED ROTATION"
-msgstr ""
+msgstr "反向旋轉"
 
 msgid "BOOT SPLASH"
-msgstr ""
+msgstr "開機畫面"
 
 msgid "SILENT SPLASH"
-msgstr ""
+msgstr "無聲開機畫面"
 
 msgid "NO SPLASH"
-msgstr ""
+msgstr "不使用開機畫面"
 
 msgid "RETROACHIEVEMENTS SETTINGS"
 msgstr "RETROACHIEVEMENTS 成就設定"
