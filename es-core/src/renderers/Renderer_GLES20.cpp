@@ -530,19 +530,10 @@ namespace Renderer
 		useProgram(&shaderProgramColorNoTexture);
 
 		// Do rendering
-		bool blend = (_srcBlendFactor != Blend::ONE && _dstBlendFactor != Blend::ONE);
-		if (blend)
-		{
-			GL_CHECK_ERROR(glEnable(GL_BLEND));
-			GL_CHECK_ERROR(glBlendFunc(convertBlendFactor(_srcBlendFactor), convertBlendFactor(_dstBlendFactor)));
-		}
-		else
-		{
-			GL_CHECK_ERROR(glDisable(GL_BLEND));
-		}
+		GL_CHECK_ERROR(glEnable(GL_BLEND));
+		GL_CHECK_ERROR(glBlendFunc(convertBlendFactor(_srcBlendFactor), convertBlendFactor(_dstBlendFactor)));
 		GL_CHECK_ERROR(glDrawArrays(GL_LINES, 0, _numVertices));
-		if (blend)
-			GL_CHECK_ERROR(glDisable(GL_BLEND));
+		GL_CHECK_ERROR(glDisable(GL_BLEND));
 
 	} // drawLines
 
@@ -561,19 +552,10 @@ namespace Renderer
 			useProgram(&shaderProgramColorNoTexture);
 
 		// Do rendering
-		bool blend = (_srcBlendFactor != Blend::ONE && _dstBlendFactor != Blend::ONE);
-		if (blend)
-		{
-			GL_CHECK_ERROR(glEnable(GL_BLEND));
-			GL_CHECK_ERROR(glBlendFunc(convertBlendFactor(_srcBlendFactor), convertBlendFactor(_dstBlendFactor)));
-		}
-		else
-		{
-			GL_CHECK_ERROR(glDisable(GL_BLEND));
-		}
+		GL_CHECK_ERROR(glEnable(GL_BLEND));
+		GL_CHECK_ERROR(glBlendFunc(convertBlendFactor(_srcBlendFactor), convertBlendFactor(_dstBlendFactor)));
 		GL_CHECK_ERROR(glDrawArrays(GL_TRIANGLE_STRIP, 0, _numVertices));
-		if (blend)
-			GL_CHECK_ERROR(glDisable(GL_BLEND));
+		GL_CHECK_ERROR(glDisable(GL_BLEND));
 
 	} // drawTriangleStrips
 
@@ -664,19 +646,10 @@ namespace Renderer
 			useProgram(&shaderProgramColorNoTexture);
 
 		// Do rendering
-		bool blend = (_srcBlendFactor != Blend::ONE && _dstBlendFactor != Blend::ONE);
-		if (blend)
-		{
-			GL_CHECK_ERROR(glEnable(GL_BLEND));
-			GL_CHECK_ERROR(glBlendFunc(convertBlendFactor(_srcBlendFactor), convertBlendFactor(_dstBlendFactor)));
-		}
-		else
-		{
-			GL_CHECK_ERROR(glDisable(GL_BLEND));
-		}
+		GL_CHECK_ERROR(glEnable(GL_BLEND));
+		GL_CHECK_ERROR(glBlendFunc(convertBlendFactor(_srcBlendFactor), convertBlendFactor(_dstBlendFactor)));
 		GL_CHECK_ERROR(glDrawArrays(GL_TRIANGLE_FAN, 0, _numVertices));
-		if (blend)
-			GL_CHECK_ERROR(glDisable(GL_BLEND));
+		GL_CHECK_ERROR(glDisable(GL_BLEND));
 	}
 
 	void setStencil(const Vertex* _vertices, const unsigned int _numVertices)

@@ -34,7 +34,7 @@ private:
 class GuiBatoceraStore : public GuiComponent, IContentInstalledNotify
 {
 public:
-	GuiBatoceraStore(Window* window, const std::string& title, const std::string& subtitle, const std::string& script);
+	GuiBatoceraStore(Window* window);
 	~GuiBatoceraStore();
 
 	bool input(InputConfig* config, Input input) override;
@@ -46,7 +46,7 @@ public:
 	void OnContentInstalled(int contentType, std::string contentName, bool success) override;
 
 private:
-	static std::vector<PacmanPackage> queryPackages(std::string script);
+	static std::vector<PacmanPackage> queryPackages();
 	void loadPackagesAsync(bool updatePackageList = false, bool refreshOnly = true);
 	void loadList(bool updatePackageList, bool restoreIndex = true);
 	void processPackage(PacmanPackage package);
@@ -74,5 +74,4 @@ private:
 	std::string						mTextFilter;
 
 	std::string						mArchitecture;
-	std::string                     mScript;
 };

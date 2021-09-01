@@ -127,7 +127,7 @@ std::string ApiSystem::getVersion()
 {
 	LOG(LogDebug) << "ApiSystem::getVersion";
 
-	std::ifstream ifs("/usr/share/retrolx/retrolx.version");
+	std::ifstream ifs("/usr/share/batocera/batocera.version");
 	if (ifs.good()) 
 	{
 		std::string contents;
@@ -140,7 +140,7 @@ std::string ApiSystem::getVersion()
 
 std::string ApiSystem::getApplicationName()
 {
-	return "RetroLX";
+	return "BATOCERA";
 }
 
 bool ApiSystem::setOverscan(bool enable) 
@@ -1117,9 +1117,6 @@ bool ApiSystem::isScriptingSupported(ScriptId script)
 	case ApiSystem::BATOCERASTORE:
 		executables.push_back("batocera-store");
 		break;
-    case ApiSystem::RETROLXPACMAN:
-        executables.push_back("retrolx-pacman");
-        break;
 	case ApiSystem::THEBEZELPROJECT:
 		executables.push_back("batocera-es-thebezelproject");
 		break;		
@@ -1314,13 +1311,13 @@ std::vector<std::string> ApiSystem::extractPdfImages(const std::string fileName,
 }
 
 
-std::vector<PacmanPackage> ApiSystem::getPackages(std::string script)
+std::vector<PacmanPackage> ApiSystem::getBatoceraStorePackages()
 {
 	std::vector<PacmanPackage> packages;
 
-	LOG(LogDebug) << "ApiSystem::getPackages " << script;
+	LOG(LogDebug) << "ApiSystem::getBatoceraStorePackages";
 
-	auto res = executeEnumerationScript(script + " list");
+	auto res = executeEnumerationScript("batocera-store list");
 	std::string data = Utils::String::join(res, "\n");
 	if (data.empty())
 	{
@@ -1385,20 +1382,20 @@ std::vector<PacmanPackage> ApiSystem::getPackages(std::string script)
 	return packages;
 }
 
-std::pair<std::string, int> ApiSystem::installPackage(std::string script, std::string name, const std::function<void(const std::string)>& func)
+std::pair<std::string, int> ApiSystem::installBatoceraStorePackage(std::string name, const std::function<void(const std::string)>& func)
 {
-	return executeScript(script + " install \"" + name + "\"", func);
+	return executeScript("batocera-store install \"" + name + "\"", func);
 }
 
-std::pair<std::string, int> ApiSystem::uninstallPackage(std::string script, std::string name, const std::function<void(const std::string)>& func)
+std::pair<std::string, int> ApiSystem::uninstallBatoceraStorePackage(std::string name, const std::function<void(const std::string)>& func)
 {
-	return executeScript(script + " remove \"" + name + "\"", func);
+	return executeScript("batocera-store remove \"" + name + "\"", func);
 }
 
-void ApiSystem::refreshPackageList(std::string script)
+void ApiSystem::refreshBatoceraStorePackageList()
 {
-	executeScript(script + " refresh");
-	executeScript(script + " clean-all");
+	executeScript("batocera-store refresh");
+	executeScript("batocera-store clean-all");
 }
 
 void ApiSystem::callBatoceraPreGameListsHook()
@@ -1406,9 +1403,9 @@ void ApiSystem::callBatoceraPreGameListsHook()
 	executeScript("batocera-preupdate-gamelists-hook");
 }
 
-void ApiSystem::updatePackageList(std::string script)
+void ApiSystem::updateBatoceraStorePackageList()
 {
-	executeScript(script + " update");
+	executeScript("batocera-store update");
 }
 
 std::vector<std::string> ApiSystem::getShaderList(const std::string systemName)

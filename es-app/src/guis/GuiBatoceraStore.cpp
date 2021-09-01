@@ -21,7 +21,7 @@
 
 #define WINDOW_WIDTH (float)Math::min(Renderer::getScreenHeight() * 1.125f, Renderer::getScreenWidth() * 0.95f)
 
-GuiBatoceraStore::GuiBatoceraStore(Window* window, const std::string& title, const std::string& subtitle, const std::string& script)
+GuiBatoceraStore::GuiBatoceraStore(Window* window)
 	: GuiComponent(window), mGrid(window, Vector2i(1, 4)), mBackground(window, ":/frame.png")
 {
 	mReloadList = 1;
@@ -39,8 +39,8 @@ GuiBatoceraStore::GuiBatoceraStore(Window* window, const std::string& title, con
 	// Title
 	mHeaderGrid = std::make_shared<ComponentGrid>(mWindow, Vector2i(1, 5));
 
-	mTitle = std::make_shared<TextComponent>(mWindow, _(title.c_str()), theme->Title.font, theme->Title.color, ALIGN_CENTER); // batocera
-	mSubtitle = std::make_shared<TextComponent>(mWindow, _(subtitle.c_str()), theme->TextSmall.font, theme->TextSmall.color, ALIGN_CENTER);
+	mTitle = std::make_shared<TextComponent>(mWindow, _("CONTENT DOWNLOADER"), theme->Title.font, theme->Title.color, ALIGN_CENTER); // batocera
+	mSubtitle = std::make_shared<TextComponent>(mWindow, _("SELECT CONTENT TO INSTALL / REMOVE"), theme->TextSmall.font, theme->TextSmall.color, ALIGN_CENTER);
 	mHeaderGrid->setEntry(mTitle, Vector2i(0, 1), false, true);
 	mHeaderGrid->setEntry(mSubtitle, Vector2i(0, 3), false, true);
 
@@ -73,8 +73,6 @@ GuiBatoceraStore::GuiBatoceraStore(Window* window, const std::string& title, con
 
 	mArchitecture = ApiSystem::getInstance()->getRunningArchitecture();
 
-	mScript = script;
-
 	centerWindow();
 
 	ContentInstaller::RegisterNotify(this);
@@ -105,7 +103,7 @@ void GuiBatoceraStore::update(int deltaTime)
 		if (silent)
 		{
 			if (refreshPackages)
-				mPackages = queryPackages(mScript);
+				mPackages = queryPackages();
 
 			if (!restoreIndex)
 				mWindow->postToUiThread([this]() { loadList(false, false); });
@@ -167,9 +165,8 @@ void GuiBatoceraStore::loadList(bool updatePackageList, bool restoreIndex)
 	std::unordered_set<std::string> repositories;
 	for (auto& package : mPackages)
 	{
-        //HACK
-		//if (!mArchitecture.empty() && !package.arch.empty() && package.arch != "any" && package.arch != mArchitecture)
-        //	continue;
+		if (!mArchitecture.empty() && !package.arch.empty() && package.arch != "any" && package.arch != mArchitecture)
+			continue;
 
 		if (repositories.find(package.repository) == repositories.cend())
 			repositories.insert(package.repository);
@@ -205,9 +202,8 @@ void GuiBatoceraStore::loadList(bool updatePackageList, bool restoreIndex)
 	int i = 0;
 	for (auto package : mPackages)
 	{
-	    //HACK
-		//if (!mArchitecture.empty() && !package.arch.empty() && package.arch != "any" && package.arch != mArchitecture)
-        //	continue;
+		if (!mArchitecture.empty() && !package.arch.empty() && package.arch != "any" && package.arch != mArchitecture)
+			continue;
 
 		if (!mTabFilter.empty() && package.repository != mTabFilter)				
 			continue;		
@@ -247,10 +243,10 @@ void GuiBatoceraStore::loadList(bool updatePackageList, bool restoreIndex)
 	mReloadList = 0;
 }
 
-std::vector<PacmanPackage> GuiBatoceraStore::queryPackages(std::string script)
+std::vector<PacmanPackage> GuiBatoceraStore::queryPackages()
 {
 	auto systemNames = SystemData::getKnownSystemNames();
-	auto packages = ApiSystem::getInstance()->getPackages(script);
+	auto packages = ApiSystem::getInstance()->getBatoceraStorePackages();
 
 	std::vector<PacmanPackage> copy;
 	for (auto& package : packages)
@@ -289,11 +285,11 @@ void GuiBatoceraStore::loadPackagesAsync(bool updatePackageList, bool refreshOnl
 		{	
 			if (updatePackageList)
 				if (refreshOnly)
-					ApiSystem::getInstance()->refreshPackageList(mScript);
+					ApiSystem::getInstance()->refreshBatoceraStorePackageList();
 				else
-					ApiSystem::getInstance()->updatePackageList(mScript);
+					ApiSystem::getInstance()->updateBatoceraStorePackageList();
 
-			return queryPackages(mScript);
+			return queryPackages();
 		},
 		[this, updatePackageList](std::vector<PacmanPackage> packages)
 		{		
@@ -320,8 +316,7 @@ void GuiBatoceraStore::processPackage(PacmanPackage package)
 			snprintf(trstring, 1024, _("'%s' ADDED TO DOWNLOAD QUEUE").c_str(), package.name.c_str()); // batocera
 			mWindow->displayNotificationMessage(_U("\uF019 ") + std::string(trstring));
 
-            ContentInstaller::ContentType type = package.repository != "batocera" ? ContentInstaller::CONTENT_PACKAGE_INSTALL : ContentInstaller::CONTENT_STORE_INSTALL;
-			ContentInstaller::Enqueue(mWindow, type, package.name);
+			ContentInstaller::Enqueue(mWindow, ContentInstaller::CONTENT_STORE_INSTALL, package.name);
 			mReloadList = 2;
 
 			msgBox->close();
@@ -331,8 +326,7 @@ void GuiBatoceraStore::processPackage(PacmanPackage package)
 		{
 			mWindow->displayNotificationMessage(_U("\uF014 ") + _("UNINSTALL ADDED TO QUEUE"));
 
-            ContentInstaller::ContentType type = package.repository != "batocera" ? ContentInstaller::CONTENT_PACKAGE_INSTALL : ContentInstaller::CONTENT_STORE_INSTALL;
-			ContentInstaller::Enqueue(mWindow, type, package.name);
+			ContentInstaller::Enqueue(mWindow, ContentInstaller::CONTENT_STORE_UNINSTALL, package.name);			
 			mReloadList = 2;
 
 			msgBox->close();
@@ -346,8 +340,7 @@ void GuiBatoceraStore::processPackage(PacmanPackage package)
 			snprintf(trstring, 1024, _("'%s' ADDED TO DOWNLOAD QUEUE").c_str(), package.name.c_str()); // batocera
 			mWindow->displayNotificationMessage(_U("\uF019 ") + std::string(trstring));
 
-            ContentInstaller::ContentType type = package.repository != "batocera" ? ContentInstaller::CONTENT_PACKAGE_INSTALL : ContentInstaller::CONTENT_STORE_INSTALL;
-			ContentInstaller::Enqueue(mWindow, type, package.name);
+			ContentInstaller::Enqueue(mWindow, ContentInstaller::CONTENT_STORE_INSTALL, package.name);
 			mReloadList = 2;
 
 			msgBox->close();

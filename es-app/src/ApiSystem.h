@@ -96,8 +96,7 @@ public:
 		THEMESDOWNLOADER = 15,
 		THEBEZELPROJECT = 16,
 		PADSINFO = 17,
-		BATOCERAPREGAMELISTSHOOK = 18,
-                RETROLXPACMAN = 19
+		BATOCERAPREGAMELISTSHOOK = 18
 	};
 
 	virtual bool isScriptingSupported(ScriptId script);
@@ -194,11 +193,11 @@ public:
 
 	virtual std::string getRunningArchitecture();
 
-	std::vector<PacmanPackage> getPackages(std::string script);
-	std::pair<std::string, int> installPackage(std::string script, std::string name, const std::function<void(const std::string)>& func = nullptr);
-	std::pair<std::string, int> uninstallPackage(std::string script, std::string name, const std::function<void(const std::string)>& func = nullptr);
-	void updatePackageList(std::string script);
-	void refreshPackageList(std::string script);
+	std::vector<PacmanPackage> getBatoceraStorePackages();
+	std::pair<std::string, int> installBatoceraStorePackage(std::string name, const std::function<void(const std::string)>& func = nullptr);
+	std::pair<std::string, int> uninstallBatoceraStorePackage(std::string name, const std::function<void(const std::string)>& func = nullptr);
+	void updateBatoceraStorePackageList();
+	void refreshBatoceraStorePackageList();
 
 	void callBatoceraPreGameListsHook();
 
