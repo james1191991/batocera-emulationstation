@@ -617,7 +617,7 @@ msgid "SEARCHING WIFI NETWORKS"
 msgstr "搜尋 WIFI"
 
 msgid "FORGET A BLUETOOTH DEVICE"
-msgstr ""
+msgstr "忘記藍牙裝置"
 
 msgid "REMOVE ALL"
 msgstr "移除全部"
@@ -626,7 +626,7 @@ msgid "NO BLUETOOTH DEVICES FOUND"
 msgstr "沒有發現藍牙裝置"
 
 msgid "BLUETOOTH DEVICES HAVE BEEN DELETED."
-msgstr ""
+msgstr "藍牙裝置已被刪除。"
 
 msgid "FILE BROWSER"
 msgstr "檔案瀏覽器"
@@ -1157,7 +1157,7 @@ msgid "GAMES SETTINGS"
 msgstr "遊戲設定"
 
 msgid "CONTROLLERS & BLUETOOTH SETTINGS"
-msgstr ""
+msgstr "控制器與藍牙設定"
 
 msgid "UI SETTINGS"
 msgstr "UI 設定"
@@ -1751,7 +1751,7 @@ msgstr ""
 "鍵」。 長按任意按鈕可跳過您無法指派的按鍵。 按鍵名稱是參照超任的遊戲控制器。"
 
 msgid "PAIR A BLUETOOTH DEVICE"
-msgstr ""
+msgstr "配對藍牙裝置"
 
 #, c-format
 msgid "INPUT P%i"
