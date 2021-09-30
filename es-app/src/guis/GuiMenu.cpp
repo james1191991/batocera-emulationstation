@@ -85,6 +85,16 @@
 #define fake_gettext_glversion		_("VERSION")
 #define fake_gettext_glslversion	_("SHADERS")
 
+#define gettext_controllers_settings				_("CONTROLLERS SETTINGS")
+#define gettext_controllers_and_bluetooth_settings  _("CONTROLLERS & BLUETOOTH SETTINGS")
+
+// Windows build does not have bluetooth support, so affect the label for Windows
+#if WIN32
+#define controllers_settings_label		gettext_controllers_settings
+#else
+#define controllers_settings_label		gettext_controllers_and_bluetooth_settings
+#endif
+
 GuiMenu::GuiMenu(Window *window, bool animate) : GuiComponent(window), mMenu(window, _("MAIN MENU").c_str()), mVersion(window)
 {
 	// MAIN MENU
@@ -123,7 +133,7 @@ GuiMenu::GuiMenu(Window *window, bool animate) : GuiComponent(window), mMenu(win
 	{
 #if !defined(WIN32) || defined(_DEBUG)
 		addEntry(_("GAMES SETTINGS").c_str(), true, [this] { openGamesSettings_batocera(); }, "iconGames");
-		addEntry(_("CONTROLLERS & BLUETOOTH SETTINGS").c_str(), true, [this] { openControllersSettings_batocera(); }, "iconControllers");
+		addEntry(controllers_settings_label.c_str(), true, [this] { openControllersSettings_batocera(); }, "iconControllers");
 		addEntry(_("UI SETTINGS").c_str(), true, [this] { openUISettings(); }, "iconUI");
 		addEntry(_("GAME COLLECTION SETTINGS").c_str(), true, [this] { openCollectionSystemSettings(); }, "iconAdvanced");
 		addEntry(_("SOUND SETTINGS").c_str(), true, [this] { openSoundSettings(); }, "iconSound");
@@ -137,7 +147,7 @@ GuiMenu::GuiMenu(Window *window, bool animate) : GuiComponent(window), mMenu(win
 		addEntry(_("UI SETTINGS").c_str(), true, [this] { openUISettings(); }, "iconUI");
 
 		if (ApiSystem::getInstance()->isScriptingSupported(ApiSystem::GAMESETTINGS))		
-			addEntry(_("CONTROLLERS & BLUETOOTH SETTINGS").c_str(), true, [this] { openControllersSettings_batocera(); }, "iconControllers");
+			addEntry(controllers_settings_label.c_str(), true, [this] { openControllersSettings_batocera(); }, "iconControllers");
 		else
 			addEntry(_("CONFIGURE INPUT"), true, [this] { openConfigInput(); }, "iconControllers");
 
@@ -1023,6 +1033,13 @@ void GuiMenu::openDeveloperSettings()
 	s->addWithLabel(_("PRELOAD UI"), preloadUI);
 	s->addSaveFunc([preloadUI] { Settings::getInstance()->setBool("PreloadUI", preloadUI->getState()); });
 
+	// preload Medias
+	auto preloadMedias = std::make_shared<SwitchComponent>(mWindow);
+	preloadMedias->setState(Settings::getInstance()->getBool("PreloadMedias"));
+	s->addWithDescription(_("PRELOAD MEDIAS FILESYSTEM"), _("REDUCE UI LAGS OVER STARTUP TIME"), preloadMedias);
+	s->addSaveFunc([preloadMedias] { Settings::getInstance()->setBool("PreloadMedias", preloadMedias->getState()); });
+
+
 	// threaded loading
 	auto threadedLoading = std::make_shared<SwitchComponent>(mWindow);
 	threadedLoading->setState(Settings::getInstance()->getBool("ThreadedLoading"));
@@ -1266,15 +1283,19 @@ void GuiMenu::openSystemSettings_batocera()
 		PowerSaver::init();
 	});
 
-#ifdef _ENABLE_TTS_
-	// tts
-	auto tts = std::make_shared<SwitchComponent>(mWindow);
-	tts->setState(Settings::getInstance()->getBool("TTS"));
-	s->addWithLabel(_("TEXT TO SPEECH"), tts);
-	s->addSaveFunc([tts] {
-			 TextToSpeech::getInstance()->enable(tts->getState());
-			 Settings::getInstance()->setBool("TTS", tts->getState());
-		       });
+#if defined(_ENABLE_TTS_) || defined(WIN32)
+	if (TextToSpeech::getInstance()->isAvailable())
+	{
+			// tts
+		auto tts = std::make_shared<SwitchComponent>(mWindow);
+		tts->setState(Settings::getInstance()->getBool("TTS"));
+		s->addWithLabel(_("TEXT TO SPEECH"), tts);
+		s->addSaveFunc([tts] {
+			 if(TextToSpeech::getInstance()->isEnabled() != tts->getState()) {
+			   TextToSpeech::getInstance()->enable(tts->getState());
+			   Settings::getInstance()->setBool("TTS", tts->getState());
+			 }});
+	}
 #endif
 
 	// UI RESTRICTIONS
@@ -2411,7 +2432,7 @@ void GuiMenu::openEmulatorSettings()
 
 void GuiMenu::openControllersSettings_batocera(int autoSel)
 {
-	GuiSettings* s = new GuiSettings(mWindow, _("CONTROLLERS & BLUETOOTH SETTINGS").c_str());
+	GuiSettings* s = new GuiSettings(mWindow, controllers_settings_label.c_str());
 
 	Window *window = mWindow;
 
@@ -3403,6 +3424,16 @@ void GuiMenu::openUISettings()
 		}
 	});
 	
+	auto ignoreArticles = std::make_shared<SwitchComponent>(mWindow);
+	ignoreArticles->setState(Settings::getInstance()->getBool("IgnoreLeadingArticles"));
+	s->addWithLabel(_("IGNORE LEADING ARTICLES WHEN SORTING"), ignoreArticles);
+	s->addSaveFunc([s, ignoreArticles]
+	{
+		if (Settings::getInstance()->setBool("IgnoreLeadingArticles", ignoreArticles->getState()))
+		{
+			s->setVariable("reloadAll", true);
+		}
+	});
 
 	s->onFinalize([s, pthis, window]
 	{
