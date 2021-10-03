@@ -904,10 +904,10 @@ msgid "VIEW GAME MAP"
 msgstr "檢視遊戲地圖"
 
 msgid "VIEW FULLSCREEN VIDEO"
-msgstr ""
+msgstr "檢視全螢幕影片"
 
 msgid "VIEW GAME MEDIAS"
-msgstr ""
+msgstr "檢視遊戲媒體"
 
 msgid "CURRENT CORE IS NOT COMPATIBLE"
 msgstr "目前的核心並不相容"
@@ -1437,10 +1437,10 @@ msgid "PRELOAD UI"
 msgstr "預先載入 UI"
 
 msgid "PRELOAD MEDIAS FILESYSTEM"
-msgstr ""
+msgstr "預先載入媒體檔案系統"
 
 msgid "REDUCE UI LAGS OVER STARTUP TIME"
-msgstr ""
+msgstr "於啟動期間減少 UI 停滯現象"
 
 msgid "THREADED LOADING"
 msgstr "多執行緒載入"
@@ -1893,7 +1893,7 @@ msgid "ICON AND TEXT"
 msgstr "圖示與文字"
 
 msgid "IGNORE LEADING ARTICLES WHEN SORTING"
-msgstr ""
+msgstr "排序時忽略冠詞"
 
 msgid "VOLUME"
 msgstr "音量"
@@ -2299,7 +2299,7 @@ msgid "RELEASE YEAR, SYSTEM, DESCENDING"
 msgstr "發行年份，遊戲平台（降序）"
 
 msgid "A,AN,THE"
-msgstr ""
+msgstr "A,AN,THE"
 
 msgid "Extracting"
 msgstr "提取中"
