@@ -1353,7 +1353,7 @@ msgid "CLEAN GAMELISTS & REMOVE UNUSED MEDIA"
 msgstr "清理遊戲清單 & 移除未使用的媒體"
 
 msgid "Cleaning"
-msgstr "清理中 "
+msgstr "清理中"
 
 msgid "CLEAR CACHES"
 msgstr "清除快取"
