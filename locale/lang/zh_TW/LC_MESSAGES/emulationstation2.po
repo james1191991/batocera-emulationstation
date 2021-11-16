@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: James Ou <james1191991@gmail.com>\n"
 "Language-Team: \n"
@@ -993,11 +993,11 @@ msgstr "新增至自定義合輯..."
 msgid "SCRAPE"
 msgstr "資料搜刮"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
-msgstr "編輯手把轉鍵盤設定檔"
+msgid "EDIT PADTOKEY PROFILE"
+msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
-msgstr "建立手把轉鍵盤設定檔"
+msgid "CREATE PADTOKEY PROFILE"
+msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "進階遊戲選項"
@@ -1116,6 +1116,9 @@ msgstr "記憶體"
 
 msgid "Battery"
 msgstr "電池"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "CPU 型號"
@@ -1352,11 +1355,11 @@ msgstr "建立支援檔案"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "確定要建立支援檔案？"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
-msgstr "已成功產生支援檔案"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
+msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
-msgstr "支援檔案產生失敗"
+msgid "SUPPORT FILE CREATION FAILED"
+msgstr ""
 
 msgid "FORMAT A DISK"
 msgstr "格式化磁碟"
@@ -1450,14 +1453,17 @@ msgstr "顯示網路指示器圖示"
 msgid "OPTIMIZATIONS"
 msgstr "最佳化"
 
-msgid "PRELOAD UI"
-msgstr "預先載入 UI"
+msgid "PRELOAD UI ELEMENTS"
+msgstr ""
 
-msgid "PRELOAD MEDIAS FILESYSTEM"
-msgstr "預先載入媒體檔案系統"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
-msgstr "於啟動期間減少 UI 停滯現象"
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
+msgstr ""
 
 msgid "THREADED LOADING"
 msgstr "多執行緒載入"
@@ -1509,6 +1515,15 @@ msgstr "將時鐘顯示為 12 小時制"
 
 msgid "POWER SAVER MODES"
 msgstr "省電模式"
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "DEFAULT"
+msgstr "預設"
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr "螢幕閱讀器（文字轉語音）"
@@ -1720,6 +1735,9 @@ msgstr "連接埠"
 msgid "USE RELAY SERVER"
 msgstr "使用中繼伺服器"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr "預設全域設定"
 
@@ -1747,14 +1765,14 @@ msgstr "顯示即時存檔"
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr "即時存檔不為空時顯示"
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "濾鏡著色器設定"
 
 msgid "DECORATIONS"
 msgstr "裝飾框"
-
-msgid "DECORATION SET"
-msgstr "裝飾框集"
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "延展框體 (4K & ULTRAWIDE)"
@@ -2573,9 +2591,6 @@ msgstr "編輯"
 msgid "ENABLED"
 msgstr "啟用"
 
-msgid "DISABLED"
-msgstr "停用"
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2616,6 +2631,15 @@ msgstr "螢幕閱讀器已啟用"
 
 msgid "SCREEN READER DISABLED"
 msgstr "螢幕閱讀器已停用"
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "預先載入 UI"
+
+#~ msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "編輯手把轉鍵盤設定檔"
+
+#~ msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "建立手把轉鍵盤設定檔"
 
 #~ msgid "FIND ALL GAMES"
 #~ msgstr "尋找全部遊戲"
@@ -2814,9 +2838,6 @@ msgstr "螢幕閱讀器已停用"
 
 #~ msgid "SILENT SPLASH"
 #~ msgstr "無聲開機畫面"
-
-#~ msgid "DEFAULT"
-#~ msgstr "預設"
 
 #~ msgid "RETROACHIEVEMENTS SETTINGS"
 #~ msgstr "RETROACHIEVEMENTS 成就設定"

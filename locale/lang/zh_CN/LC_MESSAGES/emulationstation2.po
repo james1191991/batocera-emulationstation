@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -988,11 +988,11 @@ msgstr ""
 msgid "SCRAPE"
 msgstr "抓取元数据"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
-msgstr "编辑pad到键盘自定义"
+msgid "EDIT PADTOKEY PROFILE"
+msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
-msgstr "创建pad到键盘自定义"
+msgid "CREATE PADTOKEY PROFILE"
+msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "高级游戏选项"
@@ -1109,6 +1109,9 @@ msgstr "可用内存"
 
 msgid "Battery"
 msgstr "电池"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "CPU 型号"
@@ -1345,10 +1348,10 @@ msgstr "创建支持文件"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "是否创建支持文件?"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1443,13 +1446,16 @@ msgstr "显示网络标识"
 msgid "OPTIMIZATIONS"
 msgstr "优化"
 
-msgid "PRELOAD UI"
-msgstr "预加载UI"
-
-msgid "PRELOAD MEDIAS FILESYSTEM"
+msgid "PRELOAD UI ELEMENTS"
 msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
+
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
 msgstr ""
 
 msgid "THREADED LOADING"
@@ -1502,6 +1508,15 @@ msgstr ""
 
 msgid "POWER SAVER MODES"
 msgstr "省电模式"
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "DEFAULT"
+msgstr ""
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1710,6 +1725,9 @@ msgstr "端口"
 msgid "USE RELAY SERVER"
 msgstr "使用中继服务"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1737,14 +1755,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "着色器设置"
 
 msgid "DECORATIONS"
 msgstr "装饰框"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "弹性挡板（4K和超宽）"
@@ -2552,9 +2570,6 @@ msgstr "编辑"
 msgid "ENABLED"
 msgstr ""
 
-msgid "DISABLED"
-msgstr ""
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2595,6 +2610,15 @@ msgstr ""
 
 msgid "SCREEN READER DISABLED"
 msgstr ""
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "预加载UI"
+
+#~ msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "编辑pad到键盘自定义"
+
+#~ msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "创建pad到键盘自定义"
 
 #~ msgid "All Games"
 #~ msgstr "全部游戏"

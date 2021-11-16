@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 10:55+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -994,11 +994,11 @@ msgstr "AGGIUNGI "
 msgid "SCRAPE"
 msgstr "SCARICA INFO (SCRAPER)"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
-msgstr "MODIFICA CONFIGURAZIONE PAD2KEY"
+msgid "EDIT PADTOKEY PROFILE"
+msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
-msgstr "CREA CONFIGURAZIONE PAD2KEY"
+msgid "CREATE PADTOKEY PROFILE"
+msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "OPZIONI AVANZATE GIOCO"
@@ -1118,6 +1118,9 @@ msgstr "Memoria disponibile"
 
 msgid "Battery"
 msgstr "Batteria"
+
+msgid "Model"
+msgstr "Modello"
 
 msgid "Cpu model"
 msgstr "Modello CPU"
@@ -1354,11 +1357,11 @@ msgstr "CREA UN FILE DI SUPPORTO"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "CREARE UN FILE DI SUPPORTO?"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
-msgstr "FILE DI SUPPORTO GENERATO CON SUCCESSO"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
+msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
-msgstr "GENERAZIONE FILE DI SUPPORT FALLITA"
+msgid "SUPPORT FILE CREATION FAILED"
+msgstr ""
 
 msgid "FORMAT A DISK"
 msgstr "FORMATTA DISCO"
@@ -1454,14 +1457,17 @@ msgstr "MOSTRA INDICATORE DI RETE"
 msgid "OPTIMIZATIONS"
 msgstr "OTTIMIZZAZIONI"
 
-msgid "PRELOAD UI"
-msgstr "UI PRECARICATA"
+msgid "PRELOAD UI ELEMENTS"
+msgstr ""
 
-msgid "PRELOAD MEDIAS FILESYSTEM"
-msgstr "PRECARICA MEDIA NEL FILESYSTEM"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
-msgstr "RIDUCI RITARDI DELL'UI NEL TEMPO DI AVVIO"
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
+msgstr ""
 
 msgid "THREADED LOADING"
 msgstr "CARICAMENTO ACCODATO"
@@ -1513,6 +1519,15 @@ msgstr "OROLOGIO - FORMATO 12-ORE"
 
 msgid "POWER SAVER MODES"
 msgstr "MODALITÀ RISPARMIO ENERGETICO"
+
+msgid "DISABLED"
+msgstr "DISATTIVATO"
+
+msgid "DEFAULT"
+msgstr "DEFAULT"
+
+msgid "INSTANT"
+msgstr "IMMEDIATO"
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr "SINTESI VOCALE (TEXT TO SPEECH)"
@@ -1725,6 +1740,9 @@ msgstr "PORTA"
 msgid "USE RELAY SERVER"
 msgstr "USA RELAY SERVER"
 
+msgid "DECORATION SET"
+msgstr "SET CORNICI"
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr "IMPOSTAZIONI GLOBALI DI DEFAULT"
 
@@ -1752,14 +1770,14 @@ msgstr "MOSTRA SALVATAGGIO INSTANT."
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr "MOSTRA SALVATAGGI SE PRESENTI"
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "EFFETTO SHADER"
 
 msgid "DECORATIONS"
 msgstr "CORNICI"
-
-msgid "DECORATION SET"
-msgstr "SET CORNICI"
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "ESTENDI CORNICI (4K & ULTRAWIDE)"
@@ -2592,9 +2610,6 @@ msgstr "MODIFICA"
 msgid "ENABLED"
 msgstr "ATTIVATO"
 
-msgid "DISABLED"
-msgstr "DISATTIVATO"
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2639,6 +2654,27 @@ msgstr "SINTESI VOCALE ATTIVATA"
 
 msgid "SCREEN READER DISABLED"
 msgstr "SINTESI VOCALE DISATTIVATA"
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "UI PRECARICATA"
+
+#~ msgid "PRELOAD MEDIAS FILESYSTEM"
+#~ msgstr "PRECARICA MEDIA NEL FILESYSTEM"
+
+#~ msgid "REDUCE UI LAGS OVER STARTUP TIME"
+#~ msgstr "RIDUCI RITARDI DELL'UI NEL TEMPO DI AVVIO"
+
+#~ msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "MODIFICA CONFIGURAZIONE PAD2KEY"
+
+#~ msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "CREA CONFIGURAZIONE PAD2KEY"
+
+#~ msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+#~ msgstr "FILE DI SUPPORTO GENERATO CON SUCCESSO"
+
+#~ msgid "SUPPORT FILE GENERATION FAILED"
+#~ msgstr "GENERAZIONE FILE DI SUPPORT FALLITA"
 
 #~ msgid "START SCRAPING"
 #~ msgstr "INIZIA RICERCA"
@@ -2851,9 +2887,6 @@ msgstr "SINTESI VOCALE DISATTIVATA"
 
 #~ msgid "SILENT SPLASH"
 #~ msgstr "SCHERMATA SENZA AUDIO"
-
-#~ msgid "DEFAULT"
-#~ msgstr "DEFAULT"
 
 #~ msgid "RETROACHIEVEMENTS SETTINGS"
 #~ msgstr "OPZIONI RETROACHIEVEMENTS (TROFEI)"

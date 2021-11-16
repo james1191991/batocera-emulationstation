@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Seis\n"
 "Language-Team: \n"
@@ -992,11 +992,11 @@ msgstr "AÑADIR A COLECCIÓN PERSONALIZADA…"
 msgid "SCRAPE"
 msgstr "SCRAPEAR"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
-msgstr "CONFIGURACIÓN DE CONTROL A TECLADO"
+msgid "EDIT PADTOKEY PROFILE"
+msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
-msgstr "CONFIGURACIÓN DE CONTROL A TECLADO"
+msgid "CREATE PADTOKEY PROFILE"
+msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "OPCIONES AVANZADAS DEL JUEGO"
@@ -1113,6 +1113,9 @@ msgstr "Memoria RAM usada/disponible"
 
 msgid "Battery"
 msgstr "Batería"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "Procesador"
@@ -1349,10 +1352,10 @@ msgstr "CREAR UN ARCHIVO DE SOPORTE"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "¿DESEAS CREAR UN ARCHIVO DE SOPORTE?"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1449,13 +1452,16 @@ msgstr "MOSTRAR INDICADOR DE RED"
 msgid "OPTIMIZATIONS"
 msgstr "OPTIMIZACIONES"
 
-msgid "PRELOAD UI"
-msgstr "PRECARGAR LA INTERFAZ"
-
-msgid "PRELOAD MEDIAS FILESYSTEM"
+msgid "PRELOAD UI ELEMENTS"
 msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
+
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
 msgstr ""
 
 msgid "THREADED LOADING"
@@ -1508,6 +1514,15 @@ msgstr "MOSTRAR RELOJ EN FORMATO 12 HORAS"
 
 msgid "POWER SAVER MODES"
 msgstr "MODO AHORRO DE ENERGÍA"
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "DEFAULT"
+msgstr ""
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1716,6 +1731,9 @@ msgstr "PUERTO"
 msgid "USE RELAY SERVER"
 msgstr "USAR SERVIDOR DE RETRANSMISIÓN"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1743,14 +1761,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "EFECTOS DE PANTALLA (SHADERS)"
 
 msgid "DECORATIONS"
 msgstr "DECORACIONES"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "AJUSTAR BISELES (4K & ULTRAWIDE)"
@@ -2570,9 +2588,6 @@ msgstr "EDITAR"
 msgid "ENABLED"
 msgstr ""
 
-msgid "DISABLED"
-msgstr ""
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2617,6 +2632,15 @@ msgstr ""
 
 msgid "SCREEN READER DISABLED"
 msgstr ""
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "PRECARGAR LA INTERFAZ"
+
+#~ msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "CONFIGURACIÓN DE CONTROL A TECLADO"
+
+#~ msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "CONFIGURACIÓN DE CONTROL A TECLADO"
 
 #~ msgid "FIND ALL GAMES"
 #~ msgstr "BUSCAR TODOS LOS JUEGOS"

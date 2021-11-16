@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -992,11 +992,11 @@ msgstr "HOZZÁADÁS EGYEDI GYŰJTEMÉNYHEZ..."
 msgid "SCRAPE"
 msgstr "LEKÉRÉS"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
-msgstr "PAD2KEY KONFIGURÁCIÓ SZERKESZTÉSE"
+msgid "EDIT PADTOKEY PROFILE"
+msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
-msgstr "PAD2KEY KONFIGURÁCIÓ KÉSZÍTÉSE"
+msgid "CREATE PADTOKEY PROFILE"
+msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "HALADÓ JÁTÉK BEÁLLÍTÁSOK"
@@ -1113,6 +1113,9 @@ msgstr "Rendelkezésre álló memória"
 
 msgid "Battery"
 msgstr "Akkumulátor"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "Cpu modell"
@@ -1349,10 +1352,10 @@ msgstr "TÁMOGATÁSI FILE LÉTREHOZÁSA"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "LÉTREHOZ TÁMOGATÁSI FÁJLT?"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1449,13 +1452,16 @@ msgstr "HÁLÓZATI JELZŐ MEGJELENÍTÉSE"
 msgid "OPTIMIZATIONS"
 msgstr "OPTIMALIZÁLÁSOK"
 
-msgid "PRELOAD UI"
-msgstr "UI ELŐTÖLTÉSE"
-
-msgid "PRELOAD MEDIAS FILESYSTEM"
+msgid "PRELOAD UI ELEMENTS"
 msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
+
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
 msgstr ""
 
 msgid "THREADED LOADING"
@@ -1508,6 +1514,15 @@ msgstr "12 ÓRÁS ÓRA FORMÁTUM BEÁLLÍTÁSA"
 
 msgid "POWER SAVER MODES"
 msgstr "ENERGIA TAKARÉKOS MÓDOK"
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "DEFAULT"
+msgstr ""
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1716,6 +1731,9 @@ msgstr "PORT"
 msgid "USE RELAY SERVER"
 msgstr "RELAY SZERVER HASZNÁLATA"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1743,14 +1761,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "SHADER VÁLASZTÁS"
 
 msgid "DECORATIONS"
 msgstr "DEKORÁCIÓ"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "KERET NYÚJTÁS (4K és ULTRASZÉLES)"
@@ -2569,9 +2587,6 @@ msgstr "SZERKESZT"
 msgid "ENABLED"
 msgstr ""
 
-msgid "DISABLED"
-msgstr ""
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2616,6 +2631,15 @@ msgstr ""
 
 msgid "SCREEN READER DISABLED"
 msgstr ""
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "UI ELŐTÖLTÉSE"
+
+#~ msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "PAD2KEY KONFIGURÁCIÓ SZERKESZTÉSE"
+
+#~ msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "PAD2KEY KONFIGURÁCIÓ KÉSZÍTÉSE"
 
 #~ msgid "FIND ALL GAMES"
 #~ msgstr "MINDEN JÁTÉK KERESÉSE"

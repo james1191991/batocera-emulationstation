@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BATOCERA.LINUX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: 2020-05-21 03:34+0300\n"
 "Last-Translator: sultan AlShaheen\n"
 "Language-Team: Arabic (Saudi Arabia)\n"
@@ -1000,10 +1000,10 @@ msgstr ""
 msgid "SCRAPE"
 msgstr "كشط"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+msgid "EDIT PADTOKEY PROFILE"
 msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+msgid "CREATE PADTOKEY PROFILE"
 msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
@@ -1121,6 +1121,9 @@ msgstr "الذاكرة المتوفرة"
 
 msgid "Battery"
 msgstr "البطارية"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "نوع المعالج"
@@ -1357,10 +1360,10 @@ msgstr "أنشئ ملف دعم"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "هل تريد إنشاء ملف دعم ؟"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1455,13 +1458,16 @@ msgstr ""
 msgid "OPTIMIZATIONS"
 msgstr ""
 
-msgid "PRELOAD UI"
-msgstr "تحميل واجهة المستخدم"
-
-msgid "PRELOAD MEDIAS FILESYSTEM"
+msgid "PRELOAD UI ELEMENTS"
 msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
+
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
 msgstr ""
 
 msgid "THREADED LOADING"
@@ -1514,6 +1520,15 @@ msgstr ""
 
 msgid "POWER SAVER MODES"
 msgstr "أوضاع حفظ الطاقة"
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "DEFAULT"
+msgstr ""
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1722,6 +1737,9 @@ msgstr "المنفذ"
 msgid "USE RELAY SERVER"
 msgstr "استخدم خادم حقيقي"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1749,14 +1767,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr ""
 
 msgid "DECORATIONS"
 msgstr "الديكور"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr ""
@@ -2599,9 +2617,6 @@ msgstr "تعديل"
 msgid "ENABLED"
 msgstr ""
 
-msgid "DISABLED"
-msgstr ""
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2662,6 +2677,9 @@ msgstr ""
 
 msgid "SCREEN READER DISABLED"
 msgstr ""
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "تحميل واجهة المستخدم"
 
 #~ msgid "All Games"
 #~ msgstr "كل الألعاب"

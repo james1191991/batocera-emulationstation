@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: 2021-10-02 17:16+0000\n"
 "Last-Translator: Weblate Admin <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://fabrica.mejans.fr/projects/autres/batocera/"
@@ -997,10 +997,10 @@ msgstr ""
 msgid "SCRAPE"
 msgstr "RECUPERAR INFO"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+msgid "EDIT PADTOKEY PROFILE"
 msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+msgid "CREATE PADTOKEY PROFILE"
 msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
@@ -1118,6 +1118,9 @@ msgstr "Memòria disponibla"
 
 msgid "Battery"
 msgstr "Batariá"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "Modèl processor"
@@ -1354,10 +1357,10 @@ msgstr ""
 msgid "CREATE A SUPPORT FILE?"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1452,13 +1455,16 @@ msgstr ""
 msgid "OPTIMIZATIONS"
 msgstr ""
 
-msgid "PRELOAD UI"
+msgid "PRELOAD UI ELEMENTS"
 msgstr ""
 
-msgid "PRELOAD MEDIAS FILESYSTEM"
+msgid "Reduce overall menu lag at the cost of storage space"
 msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
 msgstr ""
 
 msgid "THREADED LOADING"
@@ -1511,6 +1517,15 @@ msgstr ""
 
 msgid "POWER SAVER MODES"
 msgstr "MÒDES ESTALVIADOR D'ENERGIA"
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "DEFAULT"
+msgstr ""
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1719,6 +1734,9 @@ msgstr "PÒRT"
 msgid "USE RELAY SERVER"
 msgstr ""
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1746,14 +1764,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr ""
 
 msgid "DECORATIONS"
 msgstr "DECORACIONS"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr ""
@@ -2566,9 +2584,6 @@ msgid "EDIT"
 msgstr "MODIFICAR"
 
 msgid "ENABLED"
-msgstr ""
-
-msgid "DISABLED"
 msgstr ""
 
 #, c-format

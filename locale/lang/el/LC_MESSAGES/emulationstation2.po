@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -989,11 +989,11 @@ msgstr "ΠΡΟΣΘΗΚΗ ΣΤΗΝ ΕΞΑΤΟΜΙΚΕΥΜΕΝΗ ΣΥΛΛΟΓΗ"
 msgid "SCRAPE"
 msgstr ""
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
-msgstr "ΕΠΕΞΕΡΓΑΣΙΑ PAD ΣΤΗ ΔΙΑΜΟΡΦΩΣΗ ΠΛΗΚΤΡΟΛΟΓΙΟΥ"
+msgid "EDIT PADTOKEY PROFILE"
+msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
-msgstr "ΔΗΜΙΟΥΡΓΙΑ PAD ΣΤΗ ΔΙΑΜΟΡΦΩΣΗ ΠΛΗΚΤΡΟΛΟΓΙΟΥ"
+msgid "CREATE PADTOKEY PROFILE"
+msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "ΣΥΝΘΕΤΕΣ ΡΥΘΜΙΣΕΙΣ ΠΑΙΧΝΙΔΙΟΥ"
@@ -1110,6 +1110,9 @@ msgstr "ΔΙΑΘΕΣΙΜΗ ΜΝΗΜΗ"
 
 msgid "Battery"
 msgstr "ΜΠΑΤΑΡΙΑ"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "ΜΟΝΤΕΛΟ ΕΠΕΞΕΡΓΑΣΤΗ"
@@ -1347,10 +1350,10 @@ msgstr "ΔΗΜΙΟΥΡΓΙΑ ΥΠΟΣΤΗΡΙΚΤΙΚΟΥ ΑΡΧΕΙΟΥ"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "ΝΑ ΔΗΜΙΟΥΡΓΗΘΕΙ ΥΠΟΣΤΗΡΙΚΤΙΚΟ ΑΡΧΕΙΟ ;"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1447,14 +1450,17 @@ msgstr "ΕΜΦΑΝΙΣΗ ΔΕΙΚΤΗ ΔΙΚΤΥΟΥ"
 msgid "OPTIMIZATIONS"
 msgstr "ΒΕΛΤΙΣΤΟΠΟΙΗΣΕΙΣ"
 
-msgid "PRELOAD UI"
-msgstr "ΠΡΟΦΟΡΤΩΣΗ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΧΡΗΣΤΗ"
+msgid "PRELOAD UI ELEMENTS"
+msgstr ""
 
-msgid "PRELOAD MEDIAS FILESYSTEM"
-msgstr "ΠΡΟΦΟΡΤΩΣΗ ΜΕΣΩΝ ΣΥΣΤΗΜΑΤΟΣ ΑΡΧΕΙΩΝ"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
-msgstr "ΠΕΡΙΟΡΙΣΜΟΣ ΚΟΛΛΗΜΑΤΩΝ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΧΡΗΣΤΗ ΚΑΤΑ ΤΗΝ ΕΚΚΙΝΗΣΗ"
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
+msgstr ""
 
 msgid "THREADED LOADING"
 msgstr "THREADED ΦΟΡΤΩΣΗ"
@@ -1506,6 +1512,15 @@ msgstr "ΕΜΦΑΝΙΣΗ ΔΩΔΕΚΑΩΡΗΣ ΜΟΡΦΗΣ ΡΟΛΟΓΙΟΥ"
 
 msgid "POWER SAVER MODES"
 msgstr "ΛΕΙΤΟΥΡΓΙΕΣ ΕΞΟΙΚΟΝΟΜΙΣΗΣ ΕΝΕΡΓΕΙΑΣ"
+
+msgid "DISABLED"
+msgstr "ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΟ"
+
+msgid "DEFAULT"
+msgstr ""
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1714,6 +1729,9 @@ msgstr "ΘΥΡΑ"
 msgid "USE RELAY SERVER"
 msgstr "ΧΡΗΣΗ RELAY ΣΕΡΒΕΡ"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1741,14 +1759,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "ΟΡΙΣΜΟΣ ΣΚΙΑΣΕΩΝ"
 
 msgid "DECORATIONS"
 msgstr "ΔΙΑΚΟΣΜΗΣΕΙΣ"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "ΕΠΕΚΤΑΣΗ ΠΕΡΙΘΟΡΙΩΝ (4K & ULTRAWIDE)"
@@ -2568,9 +2586,6 @@ msgstr "ΕΠΕΞΕΡΓΑΣΙΑ"
 msgid "ENABLED"
 msgstr "ΕΝΕΡΓΟΠΟΙΗΜΕΝΟ"
 
-msgid "DISABLED"
-msgstr "ΑΠΕΝΕΡΓΟΠΟΙΗΜΕΝΟ"
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2615,6 +2630,21 @@ msgstr ""
 
 msgid "SCREEN READER DISABLED"
 msgstr ""
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "ΠΡΟΦΟΡΤΩΣΗ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΧΡΗΣΤΗ"
+
+#~ msgid "PRELOAD MEDIAS FILESYSTEM"
+#~ msgstr "ΠΡΟΦΟΡΤΩΣΗ ΜΕΣΩΝ ΣΥΣΤΗΜΑΤΟΣ ΑΡΧΕΙΩΝ"
+
+#~ msgid "REDUCE UI LAGS OVER STARTUP TIME"
+#~ msgstr "ΠΕΡΙΟΡΙΣΜΟΣ ΚΟΛΛΗΜΑΤΩΝ ΠΕΡΙΒΑΛΛΟΝΤΟΣ ΧΡΗΣΤΗ ΚΑΤΑ ΤΗΝ ΕΚΚΙΝΗΣΗ"
+
+#~ msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "ΕΠΕΞΕΡΓΑΣΙΑ PAD ΣΤΗ ΔΙΑΜΟΡΦΩΣΗ ΠΛΗΚΤΡΟΛΟΓΙΟΥ"
+
+#~ msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "ΔΗΜΙΟΥΡΓΙΑ PAD ΣΤΗ ΔΙΑΜΟΡΦΩΣΗ ΠΛΗΚΤΡΟΛΟΓΙΟΥ"
 
 #~ msgid "FIND ALL GAMES"
 #~ msgstr "ΕΥΡΕΣΗ ΟΛΩΝ ΤΩΝ ΠΑΙΧΝΙΔΙΩΝ"

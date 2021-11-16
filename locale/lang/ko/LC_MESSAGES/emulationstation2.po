@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -991,11 +991,11 @@ msgstr "사용자 컬렉션에 추가..."
 msgid "SCRAPE"
 msgstr "스크랩"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
-msgstr "패드 키보드 전환 설정 변경"
+msgid "EDIT PADTOKEY PROFILE"
+msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
-msgstr "패드 키보드 변환 설정 생성"
+msgid "CREATE PADTOKEY PROFILE"
+msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "고급 게임 옵션"
@@ -1112,6 +1112,9 @@ msgstr "사용 가능한 메모리"
 
 msgid "Battery"
 msgstr "배터리"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "CPU 모델"
@@ -1348,10 +1351,10 @@ msgstr "지원용 파일 생성"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "지원용 파일을 만드시겠습니까?"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1446,13 +1449,16 @@ msgstr "네트워크 아이콘 표시"
 msgid "OPTIMIZATIONS"
 msgstr "최적화"
 
-msgid "PRELOAD UI"
-msgstr "UI 사전 불러오기"
-
-msgid "PRELOAD MEDIAS FILESYSTEM"
+msgid "PRELOAD UI ELEMENTS"
 msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
+
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
 msgstr ""
 
 msgid "THREADED LOADING"
@@ -1505,6 +1511,15 @@ msgstr "시간을 12시간 형식으로 표시"
 
 msgid "POWER SAVER MODES"
 msgstr "절전 모드"
+
+msgid "DISABLED"
+msgstr "사용안함"
+
+msgid "DEFAULT"
+msgstr ""
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1713,6 +1728,9 @@ msgstr "포트"
 msgid "USE RELAY SERVER"
 msgstr "릴레이 서버 사용"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1740,14 +1758,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "셰이더 설정"
 
 msgid "DECORATIONS"
 msgstr "꾸미기"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "베젤 늘리기 (4K & 울트라 와이드)"
@@ -2558,9 +2576,6 @@ msgstr "편집"
 msgid "ENABLED"
 msgstr "사용"
 
-msgid "DISABLED"
-msgstr "사용안함"
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2601,6 +2616,15 @@ msgstr ""
 
 msgid "SCREEN READER DISABLED"
 msgstr ""
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "UI 사전 불러오기"
+
+#~ msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "패드 키보드 전환 설정 변경"
+
+#~ msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+#~ msgstr "패드 키보드 변환 설정 생성"
 
 #~ msgid "FIND ALL GAMES"
 #~ msgstr "모든 게임 검색"

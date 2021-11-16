@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 09:50+0100\n"
+"POT-Creation-Date: 2021-11-16 07:49+0100\n"
 "PO-Revision-Date: 2020-03-01 23:31+0100\n"
 "Last-Translator: Mikael Bergström <krank23@gmail.com>\n"
 "Language-Team: \n"
@@ -990,10 +990,10 @@ msgstr ""
 msgid "SCRAPE"
 msgstr "SKRAPA"
 
-msgid "EDIT PAD TO KEYBOARD CONFIGURATION"
+msgid "EDIT PADTOKEY PROFILE"
 msgstr ""
 
-msgid "CREATE PAD TO KEYBOARD CONFIGURATION"
+msgid "CREATE PADTOKEY PROFILE"
 msgstr ""
 
 msgid "ADVANCED GAME OPTIONS"
@@ -1111,6 +1111,9 @@ msgstr ""
 
 msgid "Battery"
 msgstr "Batteri"
+
+msgid "Model"
+msgstr ""
 
 msgid "Cpu model"
 msgstr "Processormodell"
@@ -1348,10 +1351,10 @@ msgstr "SKAPA EN SUPPORTFIL"
 msgid "CREATE A SUPPORT FILE?"
 msgstr "SKAPA EN SUPPORTFIL?"
 
-msgid "SUPPORT FILE GENERATED SUCCESSFULLY"
+msgid "SUPPORT FILE CREATED IN SAVES FOLDER"
 msgstr ""
 
-msgid "SUPPORT FILE GENERATION FAILED"
+msgid "SUPPORT FILE CREATION FAILED"
 msgstr ""
 
 msgid "FORMAT A DISK"
@@ -1446,13 +1449,16 @@ msgstr ""
 msgid "OPTIMIZATIONS"
 msgstr ""
 
-msgid "PRELOAD UI"
-msgstr "LADDA IN UI PÅ FÖRHAND"
-
-msgid "PRELOAD MEDIAS FILESYSTEM"
+msgid "PRELOAD UI ELEMENTS"
 msgstr ""
 
-msgid "REDUCE UI LAGS OVER STARTUP TIME"
+msgid "Reduce overall menu lag at the cost of storage space"
+msgstr ""
+
+msgid "PRELOAD METADATA MEDIA"
+msgstr ""
+
+msgid "Reduce gamelist lag at the cost of storage space"
 msgstr ""
 
 msgid "THREADED LOADING"
@@ -1505,6 +1511,15 @@ msgstr ""
 
 msgid "POWER SAVER MODES"
 msgstr "ENERGISPARLÄGE"
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "DEFAULT"
+msgstr "STANDARD"
+
+msgid "INSTANT"
+msgstr ""
 
 msgid "SCREEN READER (TEXT TO SPEECH)"
 msgstr ""
@@ -1713,6 +1728,9 @@ msgstr "PORT"
 msgid "USE RELAY SERVER"
 msgstr "ANVÄND RELÄSERVER"
 
+msgid "DECORATION SET"
+msgstr ""
+
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr ""
 
@@ -1740,14 +1758,14 @@ msgstr ""
 msgid "SHOW SAVE STATES IF NOT EMPTY"
 msgstr ""
 
+msgid "INCREMENTAL SAVESTATES"
+msgstr ""
+
 msgid "SHADER SET"
 msgstr "SHADERS"
 
 msgid "DECORATIONS"
 msgstr "DEKORATIONER"
-
-msgid "DECORATION SET"
-msgstr ""
 
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr ""
@@ -2562,9 +2580,6 @@ msgstr "REDIGERA"
 msgid "ENABLED"
 msgstr ""
 
-msgid "DISABLED"
-msgstr ""
-
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -2609,6 +2624,9 @@ msgstr ""
 
 msgid "SCREEN READER DISABLED"
 msgstr ""
+
+#~ msgid "PRELOAD UI"
+#~ msgstr "LADDA IN UI PÅ FÖRHAND"
 
 #~ msgid "All Games"
 #~ msgstr "Alla spel"
@@ -2718,9 +2736,6 @@ msgstr ""
 #~ "Detta kommer att gömma de flesta menyvalen för att förhindra ändringar i "
 #~ "systemet.\n"
 #~ "För att låsa upp och återgå till fullständigt UI, skriv in denna kod:"
-
-#~ msgid "DEFAULT"
-#~ msgstr "STANDARD"
 
 #~ msgid "RETROACHIEVEMENTS SETTINGS"
 #~ msgstr "INSTÄLLNINGAR FÖR RETROACHIEVEMENTS"
