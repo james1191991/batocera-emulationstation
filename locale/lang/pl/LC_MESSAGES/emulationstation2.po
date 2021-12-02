@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-28 22:38+0100\n"
+"POT-Creation-Date: 2021-12-02 08:03+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -96,10 +96,10 @@ msgid "enter path to map"
 msgstr "wprowadź ścieżkę do mapy"
 
 msgid "Bezel (16:9)"
-msgstr ""
+msgstr "Ramka (16:9)"
 
 msgid "enter path to bezel (16:9)"
-msgstr ""
+msgstr "wprowadź ścieżkę do ramki (16:9)"
 
 msgid "Cartridge"
 msgstr "Kaseta"
@@ -1278,7 +1278,7 @@ msgid "SCRAPE FANART"
 msgstr "SCRAPE'UJ FAN ART"
 
 msgid "SCRAPE BEZEL (16:9)"
-msgstr ""
+msgstr "RAMKA SCRAPE'A (16:9)"
 
 msgid "SCRAPE BOX BACKSIDE"
 msgstr "SCRAPE'UJ TYŁ PUDEŁKA"
@@ -1724,6 +1724,8 @@ msgid ""
 "Automatically decrease frame delay temporarily to prevent frame drops. Turn "
 "off if this worsens audio/video stuttering."
 msgstr ""
+"Automatycznie zmniejsz tymczasowo opóźnienie klatek, aby zapobiec spadkowi "
+"liczby klatek. Wyłącz, jeśli pogorszy to zacinanie się dźwięku/wideo."
 
 msgid "HARDCORE MODE"
 msgstr "TRYB HARDCORE"
@@ -1812,17 +1814,20 @@ msgstr "DEKORACJE"
 msgid "STRETCH BEZELS (4K & ULTRAWIDE)"
 msgstr "ROZCIĄGNIJ RAMKI (4K + ULTRAWIDE)"
 
-msgid "SHOW CONTROLLER OVERLAYS"
-msgstr "POKAŻ NAKŁADKI KONTROLERA"
+msgid "SHOW TATTOO OVER BEZEL"
+msgstr ""
 
 msgid "SYSTEM CONTROLLERS"
 msgstr "KONTROLERY SYSTEMU"
 
-msgid "CUSTOM .PNG IMAGE"
-msgstr "NIESTANDARDOWY OBRAZ .PNG"
+msgid "CUSTOM IMAGE"
+msgstr ""
 
-msgid "OVERLAY CORNER"
-msgstr "NAROŻNIK NAKŁADKI"
+msgid "Show an image overlaid on top of the bezel."
+msgstr ""
+
+msgid "TATTOO CORNER"
+msgstr ""
 
 msgid "NORTH WEST"
 msgstr "LEWY GÓRNY"
@@ -1838,6 +1843,24 @@ msgstr "LEWY DOLNY"
 
 msgid "CUSTOM .PNG IMAGE PATH"
 msgstr "ŚCIEŻKA NIESTANDARDOWEGO OBRAZU .PNG"
+
+msgid "RESIZE TATTOO WIDTH"
+msgstr ""
+
+msgid "225/1920"
+msgstr ""
+
+msgid "240/1920"
+msgstr ""
+
+msgid "ORIGINAL"
+msgstr ""
+
+msgid "RESIZE OVERLAY WIDTH"
+msgstr ""
+
+msgid "Relative to a 1920 px bezel."
+msgstr ""
 
 msgid "AI GAME TRANSLATION"
 msgstr "TŁUMACZENIE GRY Z AI"
@@ -2079,10 +2102,10 @@ msgid "QUICK ACCESS"
 msgstr "SZYBKI DOSTĘP"
 
 msgid "SKIP TO THE NEXT SONG"
-msgstr ""
+msgstr "PRZEJDŹ DO NASTĘPNEGO UTWORU"
 
 msgid "NOW PLAYING"
-msgstr ""
+msgstr "ODTWARZANE OBECNIE"
 
 msgid "LAUNCH SCREENSAVER"
 msgstr "URUCHOM WYGASZACZ EKRANU"
@@ -2109,7 +2132,7 @@ msgid "FAST SHUTDOWN SYSTEM"
 msgstr "SZYBKIE ZAMKNIĘCIE SYSTEMU"
 
 msgid "Shutdown without saving metadata."
-msgstr ""
+msgstr "Wyłączenie bez zapisywania metadanych."
 
 msgid "REALLY SHUTDOWN WITHOUT SAVING METADATA?"
 msgstr "WYŁĄCZYĆ SYSTEM BEZ ZAPISU METADANYCH?"
@@ -2119,6 +2142,15 @@ msgstr "WYJDŹ Z EMULATIONSTATION"
 
 msgid "REALLY QUIT?"
 msgstr "NAPRAWDĘ WYJŚĆ?"
+
+msgid "SHOW CONTROLLER OVERLAYS"
+msgstr "POKAŻ NAKŁADKI KONTROLERA"
+
+msgid "CUSTOM .PNG IMAGE"
+msgstr "NIESTANDARDOWY OBRAZ .PNG"
+
+msgid "OVERLAY CORNER"
+msgstr "NAROŻNIK NAKŁADKI"
 
 msgid "COLORIZATION"
 msgstr "KOLOROWANIE"
