@@ -1728,12 +1728,12 @@ msgid "AUTOMATIC SCREENSHOT"
 msgstr "自動化螢幕截圖"
 
 msgid "CHALLENGE INDICATORS"
-msgstr ""
+msgstr "挑戰指示器"
 
 msgid ""
 "Shows icons in the bottom right corner when eligible achievements can be "
 "earned."
-msgstr ""
+msgstr "當能夠獲得符合條件的成就時在右下角顯示圖示。"
 
 msgid "RETROACHIEVEMENT UNLOCK SOUND"
 msgstr "RETROACHIEVEMENT 解鎖音效"
@@ -2465,25 +2465,25 @@ msgid "UPDATE GAMELISTS TO APPLY CHANGES."
 msgstr "更新遊戲清單來套用變更。"
 
 msgid "THE EMULATOR EXITED UNEXPECTEDLY"
-msgstr ""
+msgstr "模擬器未預期的退出了"
 
 msgid "BAD COMMAND LINE ARGUMENTS"
-msgstr ""
+msgstr "無效的命令列參數"
 
 msgid "INVALID CONFIGURATION"
-msgstr ""
+msgstr "無效的設定"
 
 msgid "UNKNOWN EMULATOR"
-msgstr ""
+msgstr "未知的模擬器"
 
 msgid "EMULATOR IS MISSING"
-msgstr ""
+msgstr "模擬器遺失"
 
 msgid "CORE IS MISSING"
-msgstr ""
+msgstr "核心遺失"
 
 msgid "UKNOWN ERROR"
-msgstr ""
+msgstr "未知的錯誤"
 
 msgid "GENRE"
 msgstr "類型"
