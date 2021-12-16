@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: batocera-es v33beta(2021/12/06)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-09 13:22+0100\n"
+"POT-Creation-Date: 2021-12-15 23:48+0100\n"
 "PO-Revision-Date: 2021-12-06 16:50+0900\n"
 "Last-Translator: mikakunin\n"
 "Language-Team: mikakunin\n"
@@ -1044,8 +1044,8 @@ msgstr "ステートセーブマネージャ"
 msgid "START NEW GAME"
 msgstr "最初から開始"
 
-msgid "START AUTO SAVE"
-msgstr "オートセーブで開始"
+msgid "START NEW AUTO SAVE"
+msgstr ""
 
 msgid "AUTO SAVE"
 msgstr "セーブ場所から開始"
@@ -1794,18 +1794,6 @@ msgstr "巻き戻し"
 msgid "INTEGER SCALING (PIXEL PERFECT)"
 msgstr "整数スケール (ピクセルを正方形表示)"
 
-msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
-msgstr "自動ステートセーブ読込"
-
-msgid "SHOW SAVE STATES"
-msgstr "ステートセーブ表示"
-
-msgid "SHOW SAVE STATES IF NOT EMPTY"
-msgstr "セーブがあれば表示"
-
-msgid "INCREMENTAL SAVESTATES"
-msgstr "ステートセーブ変更・追加"
-
 msgid "SHADER SET"
 msgstr "シェーダー設定"
 
@@ -1845,23 +1833,11 @@ msgstr "左下"
 msgid "CUSTOM .PNG IMAGE PATH"
 msgstr "カスタムイメージ(png)のパス"
 
-msgid "RESIZE TATTOO WIDTH"
-msgstr "イメージ幅を変更"
+msgid "RESIZE TATTOO"
+msgstr ""
 
-msgid "225/1920"
-msgstr "225/1920"
-
-msgid "240/1920"
-msgstr "240/1920"
-
-msgid "ORIGINAL"
-msgstr "元サイズ"
-
-msgid "RESIZE OVERLAY WIDTH"
-msgstr "オーバーレイの幅を変更"
-
-msgid "Relative to a 1920 px bezel."
-msgstr "幅1920ピクセルのベゼルが基準です。"
+msgid "Shrink/expand tattoo to fit within the bezel's border."
+msgstr ""
 
 msgid "AI GAME TRANSLATION"
 msgstr "AIゲーム翻訳"
@@ -1877,6 +1853,36 @@ msgstr "AIゲーム翻訳サービス URL"
 
 msgid "PAUSE ON TRANSLATED SCREEN"
 msgstr "翻訳画面で一時停止"
+
+msgid "SAVESTATES"
+msgstr ""
+
+msgid "AUTO SAVE/LOAD"
+msgstr ""
+
+msgid "INCREMENTAL SAVESTATES"
+msgstr "ステートセーブ変更・追加"
+
+msgid "NEW GAME CREATES NEW SLOT"
+msgstr ""
+
+msgid "NEW GAME OVERWRITES CURRENT SLOT"
+msgstr ""
+
+msgid "DISPLAY SAVE STATE MANAGER"
+msgstr ""
+
+msgid "ALWAYS"
+msgstr ""
+
+msgid "IF NOT EMPTY"
+msgstr ""
+
+msgid "SHOW SAVE STATE MANAGER"
+msgstr ""
+
+msgid "DISPLAY SAVE STATE MANAGER BEFORE LAUNCHING A GAME"
+msgstr ""
 
 msgid "PER SYSTEM ADVANCED CONFIGURATION"
 msgstr "システム別詳細設定"
@@ -2144,6 +2150,9 @@ msgstr "EMULATIONSTATION を終了"
 
 msgid "REALLY QUIT?"
 msgstr "本当に終了しますか？"
+
+msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
+msgstr "自動ステートセーブ読込"
 
 msgid "SHOW CONTROLLER OVERLAYS"
 msgstr "コントローラーイメージを表示"
@@ -2558,44 +2567,65 @@ msgstr "SHIFT(文字種変更)"
 msgid "SPACE"
 msgstr "空白"
 
+msgctxt "joystick"
 msgid "UP"
-msgstr "上"
+msgstr ""
 
+msgctxt "joystick"
 msgid "DOWN"
-msgstr "下"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT"
-msgstr "左"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT"
-msgstr "右"
+msgstr ""
 
+msgctxt "joystick"
+msgid "START"
+msgstr ""
+
+msgctxt "joystick"
+msgid "SELECT"
+msgstr ""
+
+msgctxt "joystick"
 msgid "LEFT ANALOG UP"
-msgstr "左アナログST 上"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT ANALOG DOWN"
-msgstr "左アナログST 下"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT ANALOG LEFT"
-msgstr "左アナログST 左"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT ANALOG RIGHT"
-msgstr "左アナログST 右"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG UP"
-msgstr "右アナログST 上"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG DOWN"
-msgstr "右アナログST 下"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG LEFT"
-msgstr "右アナログST 左"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG RIGHT"
-msgstr "右アナログST 右"
+msgstr ""
 
+msgctxt "joystick"
 msgid "HOTKEY"
-msgstr "ホットキー"
+msgstr ""
 
 msgid "CONFIGURING"
 msgstr "設定中"
@@ -2733,6 +2763,72 @@ msgstr "スクリーンリーダー有効"
 
 msgid "SCREEN READER DISABLED"
 msgstr "スクリーンリーダー無効"
+
+#~ msgid "START AUTO SAVE"
+#~ msgstr "オートセーブで開始"
+
+#~ msgid "SHOW SAVE STATES"
+#~ msgstr "ステートセーブ表示"
+
+#~ msgid "SHOW SAVE STATES IF NOT EMPTY"
+#~ msgstr "セーブがあれば表示"
+
+#~ msgid "UP"
+#~ msgstr "上"
+
+#~ msgid "DOWN"
+#~ msgstr "下"
+
+#~ msgid "LEFT"
+#~ msgstr "左"
+
+#~ msgid "RIGHT"
+#~ msgstr "右"
+
+#~ msgid "LEFT ANALOG UP"
+#~ msgstr "左アナログST 上"
+
+#~ msgid "LEFT ANALOG DOWN"
+#~ msgstr "左アナログST 下"
+
+#~ msgid "LEFT ANALOG LEFT"
+#~ msgstr "左アナログST 左"
+
+#~ msgid "LEFT ANALOG RIGHT"
+#~ msgstr "左アナログST 右"
+
+#~ msgid "RIGHT ANALOG UP"
+#~ msgstr "右アナログST 上"
+
+#~ msgid "RIGHT ANALOG DOWN"
+#~ msgstr "右アナログST 下"
+
+#~ msgid "RIGHT ANALOG LEFT"
+#~ msgstr "右アナログST 左"
+
+#~ msgid "RIGHT ANALOG RIGHT"
+#~ msgstr "右アナログST 右"
+
+#~ msgid "HOTKEY"
+#~ msgstr "ホットキー"
+
+#~ msgid "RESIZE TATTOO WIDTH"
+#~ msgstr "イメージ幅を変更"
+
+#~ msgid "225/1920"
+#~ msgstr "225/1920"
+
+#~ msgid "240/1920"
+#~ msgstr "240/1920"
+
+#~ msgid "ORIGINAL"
+#~ msgstr "元サイズ"
+
+#~ msgid "RESIZE OVERLAY WIDTH"
+#~ msgstr "オーバーレイの幅を変更"
+
+#~ msgid "Relative to a 1920 px bezel."
+#~ msgstr "幅1920ピクセルのベゼルが基準です。"
 
 #~ msgid "GRAPHICS API"
 #~ msgstr "グラフィック API"

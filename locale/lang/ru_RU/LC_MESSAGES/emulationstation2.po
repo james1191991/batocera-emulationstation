@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: batocera-emulationstation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-09 13:22+0100\n"
+"POT-Creation-Date: 2021-12-15 23:48+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ckau\n"
 "Language-Team: Russian <https://4pda.ru/forum/index.php?showtopic=802556>\n"
@@ -1045,8 +1045,8 @@ msgstr "МЕНЕДЖЕР БЫСТРЫХ СОХРАНЕНИЙ"
 msgid "START NEW GAME"
 msgstr "НАЧАТЬ НОВУЮ ИГРУ"
 
-msgid "START AUTO SAVE"
-msgstr "НАЧАТЬ С АВТО СОХРАНЕНИЕМ"
+msgid "START NEW AUTO SAVE"
+msgstr ""
 
 msgid "AUTO SAVE"
 msgstr "АВТО СОХРАНЕНИЕ"
@@ -1797,18 +1797,6 @@ msgstr "ПЕРЕМОТКА"
 msgid "INTEGER SCALING (PIXEL PERFECT)"
 msgstr "ЦЕЛОЕ МАСШТАБИРОВАНИЕ (ИДЕАЛЬНО)"
 
-msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
-msgstr "АВТО СОХРАНЕНИЕ/ЗАГРУЗКА"
-
-msgid "SHOW SAVE STATES"
-msgstr "ПОКАЗАТЬ БЫСТРЫЕ СОХРАНЕНИЯ"
-
-msgid "SHOW SAVE STATES IF NOT EMPTY"
-msgstr "ПОКАЗАТЬ БЫСТРЫЕ СОХРАНЕНИЯ ЕСЛИ ОНИ ИМЕЮТСЯ"
-
-msgid "INCREMENTAL SAVESTATES"
-msgstr "ДОПОЛНИТЕЛЬНЫЕ БЫСТРЫЕ СОХРАНЕНИЯ"
-
 msgid "SHADER SET"
 msgstr "ШЕЙДЕРЫ"
 
@@ -1848,23 +1836,11 @@ msgstr "СНИЗУ СЛЕВА"
 msgid "CUSTOM .PNG IMAGE PATH"
 msgstr "ПУТЬ К ПОЛЬЗ. ИЗОБРАЖЕНИЮ .PNG"
 
-msgid "RESIZE TATTOO WIDTH"
-msgstr "ИЗМЕНИТЬ ШИРИНУ ТАТУ"
+msgid "RESIZE TATTOO"
+msgstr ""
 
-msgid "225/1920"
-msgstr "225/1920"
-
-msgid "240/1920"
-msgstr "240/1920"
-
-msgid "ORIGINAL"
-msgstr "ПО УМОЛЧАНИЮ"
-
-msgid "RESIZE OVERLAY WIDTH"
-msgstr "ИЗМЕНИТЬ ШИРИНУ ОВЕРЕЛЯ"
-
-msgid "Relative to a 1920 px bezel."
-msgstr "Относительно рамки на 1920 пикселей."
+msgid "Shrink/expand tattoo to fit within the bezel's border."
+msgstr ""
 
 msgid "AI GAME TRANSLATION"
 msgstr "AI ПЕРЕВОД ИГРЫ"
@@ -1880,6 +1856,36 @@ msgstr "URL СЕРВИСА ПЕРЕВОДА AI"
 
 msgid "PAUSE ON TRANSLATED SCREEN"
 msgstr "ПАУЗА В ОКНЕ ПЕРЕВОДА"
+
+msgid "SAVESTATES"
+msgstr ""
+
+msgid "AUTO SAVE/LOAD"
+msgstr ""
+
+msgid "INCREMENTAL SAVESTATES"
+msgstr "ДОПОЛНИТЕЛЬНЫЕ БЫСТРЫЕ СОХРАНЕНИЯ"
+
+msgid "NEW GAME CREATES NEW SLOT"
+msgstr ""
+
+msgid "NEW GAME OVERWRITES CURRENT SLOT"
+msgstr ""
+
+msgid "DISPLAY SAVE STATE MANAGER"
+msgstr ""
+
+msgid "ALWAYS"
+msgstr ""
+
+msgid "IF NOT EMPTY"
+msgstr ""
+
+msgid "SHOW SAVE STATE MANAGER"
+msgstr ""
+
+msgid "DISPLAY SAVE STATE MANAGER BEFORE LAUNCHING A GAME"
+msgstr ""
 
 msgid "PER SYSTEM ADVANCED CONFIGURATION"
 msgstr "ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ СИСТЕМЫ"
@@ -2147,6 +2153,9 @@ msgstr "ВЫЙТИ ИЗ EMULATIONSTATION"
 
 msgid "REALLY QUIT?"
 msgstr "ВЫЙТИ?"
+
+msgid "AUTO SAVE/LOAD ON GAME LAUNCH"
+msgstr "АВТО СОХРАНЕНИЕ/ЗАГРУЗКА"
 
 msgid "SHOW CONTROLLER OVERLAYS"
 msgstr "ПОКАЗАТЬ ОВЕРЛЕЙ КОНТРОЛЛЕРА"
@@ -2569,44 +2578,65 @@ msgstr "SHIFT"
 msgid "SPACE"
 msgstr "ПРОБЕЛ"
 
+msgctxt "joystick"
 msgid "UP"
-msgstr "ВВЕРХ"
+msgstr ""
 
+msgctxt "joystick"
 msgid "DOWN"
-msgstr "ВНИЗ"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT"
-msgstr "ВЛЕВО"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT"
-msgstr "ВПРАВО"
+msgstr ""
 
+msgctxt "joystick"
+msgid "START"
+msgstr ""
+
+msgctxt "joystick"
+msgid "SELECT"
+msgstr ""
+
+msgctxt "joystick"
 msgid "LEFT ANALOG UP"
-msgstr "ЛЕВЫЙ СТИК ВВЕРХ"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT ANALOG DOWN"
-msgstr "ЛЕВЫЙ СТИК ВНИЗ"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT ANALOG LEFT"
-msgstr "ЛЕВЫЙ СТИК ВЛЕВО"
+msgstr ""
 
+msgctxt "joystick"
 msgid "LEFT ANALOG RIGHT"
-msgstr "ЛЕВЫЙ СТИК ВПРАВО"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG UP"
-msgstr "ПРАВЫЙ СТИК ВВЕРХ"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG DOWN"
-msgstr "ПРАВЫЙ СТИК ВНИЗ"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG LEFT"
-msgstr "ПРАВЫЙ СТИК ВЛЕВО"
+msgstr ""
 
+msgctxt "joystick"
 msgid "RIGHT ANALOG RIGHT"
-msgstr "ПРАВЫЙ СТИК ВПРАВО"
+msgstr ""
 
+msgctxt "joystick"
 msgid "HOTKEY"
-msgstr "ГОРЯЧАЯ КНОПКА"
+msgstr ""
 
 msgid "CONFIGURING"
 msgstr "НАСТРОЙКА"
@@ -2757,6 +2787,72 @@ msgstr "ЭКРАННЫЙ ДИКТОР ВКЛЮЧЕН"
 
 msgid "SCREEN READER DISABLED"
 msgstr "ЭКРАННЫЙ ДИКТОР ВЫКЛЮЧЕН"
+
+#~ msgid "START AUTO SAVE"
+#~ msgstr "НАЧАТЬ С АВТО СОХРАНЕНИЕМ"
+
+#~ msgid "SHOW SAVE STATES"
+#~ msgstr "ПОКАЗАТЬ БЫСТРЫЕ СОХРАНЕНИЯ"
+
+#~ msgid "SHOW SAVE STATES IF NOT EMPTY"
+#~ msgstr "ПОКАЗАТЬ БЫСТРЫЕ СОХРАНЕНИЯ ЕСЛИ ОНИ ИМЕЮТСЯ"
+
+#~ msgid "UP"
+#~ msgstr "ВВЕРХ"
+
+#~ msgid "DOWN"
+#~ msgstr "ВНИЗ"
+
+#~ msgid "LEFT"
+#~ msgstr "ВЛЕВО"
+
+#~ msgid "RIGHT"
+#~ msgstr "ВПРАВО"
+
+#~ msgid "LEFT ANALOG UP"
+#~ msgstr "ЛЕВЫЙ СТИК ВВЕРХ"
+
+#~ msgid "LEFT ANALOG DOWN"
+#~ msgstr "ЛЕВЫЙ СТИК ВНИЗ"
+
+#~ msgid "LEFT ANALOG LEFT"
+#~ msgstr "ЛЕВЫЙ СТИК ВЛЕВО"
+
+#~ msgid "LEFT ANALOG RIGHT"
+#~ msgstr "ЛЕВЫЙ СТИК ВПРАВО"
+
+#~ msgid "RIGHT ANALOG UP"
+#~ msgstr "ПРАВЫЙ СТИК ВВЕРХ"
+
+#~ msgid "RIGHT ANALOG DOWN"
+#~ msgstr "ПРАВЫЙ СТИК ВНИЗ"
+
+#~ msgid "RIGHT ANALOG LEFT"
+#~ msgstr "ПРАВЫЙ СТИК ВЛЕВО"
+
+#~ msgid "RIGHT ANALOG RIGHT"
+#~ msgstr "ПРАВЫЙ СТИК ВПРАВО"
+
+#~ msgid "HOTKEY"
+#~ msgstr "ГОРЯЧАЯ КНОПКА"
+
+#~ msgid "RESIZE TATTOO WIDTH"
+#~ msgstr "ИЗМЕНИТЬ ШИРИНУ ТАТУ"
+
+#~ msgid "225/1920"
+#~ msgstr "225/1920"
+
+#~ msgid "240/1920"
+#~ msgstr "240/1920"
+
+#~ msgid "ORIGINAL"
+#~ msgstr "ПО УМОЛЧАНИЮ"
+
+#~ msgid "RESIZE OVERLAY WIDTH"
+#~ msgstr "ИЗМЕНИТЬ ШИРИНУ ОВЕРЕЛЯ"
+
+#~ msgid "Relative to a 1920 px bezel."
+#~ msgstr "Относительно рамки на 1920 пикселей."
 
 #~ msgid "SKIP TO NEXT SONG"
 #~ msgstr "ПРОПУСТИТЬ ПЕСНЮ"
