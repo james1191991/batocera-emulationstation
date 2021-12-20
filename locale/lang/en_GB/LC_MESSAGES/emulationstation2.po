@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-12-16 08:40+0100\n"
+"PO-Revision-Date: 2021-12-17 13:31+1100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0\n"
 
 msgid "UPDATE AVAILABLE"
 msgstr ""
@@ -189,10 +190,10 @@ msgid "this game's number of players"
 msgstr ""
 
 msgid "Favorite"
-msgstr ""
+msgstr "Favourite"
 
 msgid "enter favorite"
-msgstr ""
+msgstr "enter favourite"
 
 msgid "Hidden"
 msgstr ""
@@ -267,7 +268,7 @@ msgid "last played"
 msgstr ""
 
 msgid "favorites"
-msgstr ""
+msgstr "favourites"
 
 msgid "2 players"
 msgstr ""
@@ -553,7 +554,7 @@ msgid "automatic"
 msgstr ""
 
 msgid "VIEW CUSTOMIZATION"
-msgstr ""
+msgstr "VIEW CUSTOMISATION"
 
 msgid "VIEW PAD TO KEYBOARD INFORMATION"
 msgstr ""
@@ -992,7 +993,7 @@ msgid "ADD TO %s"
 msgstr ""
 
 msgid "FAVORITES"
-msgstr ""
+msgstr "FAVOURITES"
 
 msgid "ADD TO CUSTOM COLLECTION..."
 msgstr ""
@@ -1459,7 +1460,7 @@ msgid "SHOW NETWORK INDICATOR"
 msgstr ""
 
 msgid "OPTIMIZATIONS"
-msgstr ""
+msgstr "OPTIMISATIONS"
 
 msgid "PRELOAD UI ELEMENTS ON BOOT"
 msgstr ""
@@ -1483,10 +1484,10 @@ msgid "ASYNC IMAGE LOADING"
 msgstr ""
 
 msgid "OPTIMIZE IMAGES VRAM USE"
-msgstr ""
+msgstr "OPTIMISE IMAGES VRAM USE"
 
 msgid "OPTIMIZE VIDEO VRAM USAGE"
-msgstr ""
+msgstr "OPTIMISE VIDEO VRAM USAGE"
 
 msgid "DOWNLOADS"
 msgstr ""
@@ -1624,7 +1625,7 @@ msgid "OFF"
 msgstr ""
 
 msgid "BUTTON LED COLOR"
-msgstr ""
+msgstr "BUTTON LED COLOUR"
 
 msgid "off"
 msgstr ""
@@ -1651,7 +1652,7 @@ msgid "cyan"
 msgstr ""
 
 msgid "POWER LED COLOR"
-msgstr ""
+msgstr "POWER LED COLOUR"
 
 msgid "heartbeat"
 msgstr ""
@@ -1940,7 +1941,7 @@ msgid "GAMELIST OPTIONS"
 msgstr ""
 
 msgid "SHOW FAVORITES ON TOP"
-msgstr ""
+msgstr "SHOW FAVOURITES ON TOP"
 
 msgid "SHOW HIDDEN FILES"
 msgstr ""
@@ -1976,7 +1977,7 @@ msgid "FILE EXTENSIONS"
 msgstr ""
 
 msgid "RESET CUSTOMIZATIONS"
-msgstr ""
+msgstr "RESET CUSTOMISATIONS"
 
 msgid "APPEARANCE"
 msgstr ""
@@ -2147,7 +2148,7 @@ msgid "OVERLAY CORNER"
 msgstr ""
 
 msgid "COLORIZATION"
-msgstr ""
+msgstr "COLOURISATION"
 
 msgid "FULL BOOT"
 msgstr ""
@@ -2323,7 +2324,7 @@ msgid "GAME OPTIONS"
 msgstr ""
 
 msgid "FAVORITE"
-msgstr ""
+msgstr "FAVOURITE"
 
 msgid ""
 "A valid account is required. Please register an account on https://"
