@@ -275,6 +275,7 @@ std::vector<std::string> getFallbackFontPaths()
 	std::vector<std::string> fallbackFonts = 
 	{
 		":/fontawesome-webfont.ttf",
+		"/usr/share/fonts/noto-sans-cjk-tc/NotoSansCJKtc-Regular.otf", // better CJK font tweak.
 		":/DroidSansFallbackFull.ttf",// japanese, chinese, present on Debian
 		":/NanumMyeongjo.ttf", // korean font		
 		":/Cairo.ttf", // arabic
