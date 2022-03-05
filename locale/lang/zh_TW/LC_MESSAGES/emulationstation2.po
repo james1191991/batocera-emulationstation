@@ -969,7 +969,7 @@ msgid "NO UPDATE AVAILABLE"
 msgstr "沒有可用的更新"
 
 msgid "INSTALL ON A NEW DISK"
-msgstr ""
+msgstr "安裝至新的磁碟"
 
 msgid "TARGET DEVICE"
 msgstr "目標裝置"
@@ -1172,7 +1172,7 @@ msgid "MARQUEE"
 msgstr "跑馬燈"
 
 msgid "SCRAPE SHORT NAME"
-msgstr ""
+msgstr "搜刮簡短名稱"
 
 msgid "SCRAPE RATINGS"
 msgstr "搜刮遊戲評分"
@@ -1220,10 +1220,10 @@ msgid "ALL"
 msgstr "全部"
 
 msgid "GAMES MISSING ANY MEDIA"
-msgstr ""
+msgstr "缺少任何媒體的遊戲"
 
 msgid "GAMES MISSING ALL MEDIA"
-msgstr ""
+msgstr "缺少全部媒體的遊戲"
 
 msgid "IGNORE RECENTLY SCRAPED GAMES"
 msgstr "忽略最近搜刮過的遊戲"
@@ -1282,7 +1282,7 @@ msgid "SYSTEM DISK USAGE"
 msgstr "系統磁碟用量"
 
 msgid "SYSTEM"
-msgstr "遊戲平台"
+msgstr "系統"
 
 msgid "VIDEO DRIVER"
 msgstr "影像驅動程式"
@@ -1836,7 +1836,7 @@ msgid "DECORATION SET"
 msgstr "裝飾框集"
 
 msgid "Current setting"
-msgstr ""
+msgstr "目前設定"
 
 msgid "DEFAULT GLOBAL SETTINGS"
 msgstr "預設全域設定"
@@ -1944,7 +1944,7 @@ msgid "IF NOT EMPTY"
 msgstr "若不為空時"
 
 msgid "Display save state manager before launching a game."
-msgstr ""
+msgstr "啟動遊戲前顯示即時存檔管理員。"
 
 msgid "PER SYSTEM ADVANCED CONFIGURATION"
 msgstr "遊戲平台個別進階設定"
@@ -2384,7 +2384,7 @@ msgid "Kid"
 msgstr "兒童"
 
 msgid "Basic"
-msgstr ""
+msgstr "基本"
 
 msgid "Released"
 msgstr "發行日期"
@@ -2407,16 +2407,16 @@ msgid "GAME OPTIONS"
 msgstr "遊戲設定"
 
 msgid "SAVE STATES (HOLD)"
-msgstr ""
+msgstr "即時存檔（按住）"
 
 msgid "GAME OPTIONS (HOLD)"
-msgstr ""
+msgstr "遊戲選項（按住）"
 
 msgid "FAVORITE"
 msgstr "我的最愛"
 
 msgid "RANDOM (HOLD)"
-msgstr ""
+msgstr "隨機（按住）"
 
 msgid ""
 "A valid account is required. Please register an account on https://"
