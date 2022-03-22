@@ -1389,6 +1389,18 @@ msgstr "AJUSTES DEL MANDO"
 msgid "CONTROLLER & BLUETOOTH SETTINGS"
 msgstr "CONFIGURACIÓN DE MANDOS Y DISPOSITIVOS BLUETOOTH"
 
+msgid "INTERNAL"
+msgstr "INTERNO"
+
+msgid "ANY EXTERNAL"
+msgstr "CUALQUIER EXTERNO"
+
+msgid "maximum 1920x1080"
+msgstr "máximo 1920x1080"
+
+msgid "maximum 640x480"
+msgstr "máximo 640x480"
+
 msgid "MAIN MENU"
 msgstr "MENÚ PRINCIPAL"
 
@@ -2224,7 +2236,7 @@ msgid "Shutdown without saving metadata."
 msgstr "Apaga el sistema sin guardar metadatos."
 
 msgid "REALLY SHUTDOWN WITHOUT SAVING METADATA?"
-msgstr "¿DESEAS APAGAR SIN GUARDAR METADATOS?"
+msgstr "¿QUIERES APAGAR SIN GUARDAR METADATOS?"
 
 msgid "QUIT EMULATIONSTATION"
 msgstr "SALIR DE EMULATIONSTATION"
@@ -2432,16 +2444,16 @@ msgid "GAME OPTIONS"
 msgstr "OPCIONES DEL JUEGO"
 
 msgid "SAVE STATES (HOLD)"
-msgstr ""
+msgstr "PARTIDAS GUARDADAS (MANTENER)"
 
 msgid "GAME OPTIONS (HOLD)"
-msgstr ""
+msgstr "OPCIONES DE JUEGO (MANTENER)"
 
 msgid "FAVORITE"
 msgstr "FAVORITO"
 
 msgid "RANDOM (HOLD)"
-msgstr ""
+msgstr "ALEATORIO (MANTENER)"
 
 msgid ""
 "A valid account is required. Please register an account on https://"
@@ -2476,6 +2488,9 @@ msgstr "Cargando la configuración del sistema..."
 
 msgid "SAVING METADATAS. PLEASE WAIT..."
 msgstr "GUARDANDO METADATOS. POR FAVOR ESPERE..."
+
+msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
+msgstr "¿QUIERES CAMBIAR LA PANTALLA?"
 
 msgid "Collections"
 msgstr "Colecciones"

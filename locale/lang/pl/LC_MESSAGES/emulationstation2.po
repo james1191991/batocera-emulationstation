@@ -1390,6 +1390,18 @@ msgstr "USTAWIENIA KONTROLERÓW"
 msgid "CONTROLLER & BLUETOOTH SETTINGS"
 msgstr "KONTROLERY I USTAWIENIA BLUETOOTH"
 
+msgid "INTERNAL"
+msgstr ""
+
+msgid "ANY EXTERNAL"
+msgstr ""
+
+msgid "maximum 1920x1080"
+msgstr ""
+
+msgid "maximum 640x480"
+msgstr ""
+
 msgid "MAIN MENU"
 msgstr "MENU GŁÓWNE"
 
@@ -2475,6 +2487,9 @@ msgstr "Ładuję konfigurację systemową..."
 
 msgid "SAVING METADATAS. PLEASE WAIT..."
 msgstr "ZAPISYWANIE METADANYCH. CZEKAJ..."
+
+msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
+msgstr ""
 
 msgid "Collections"
 msgstr "Kolekcje"
