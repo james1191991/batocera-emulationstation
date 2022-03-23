@@ -1260,7 +1260,7 @@ msgid ""
 "MAY BE FOR DIFFERENT SYSTEMS!\n"
 "CONTINUE ANYWAY?"
 msgstr ""
-"警告：你選擇的部分遊戲平台並沒有平台集合。 結果可能會比原來更加不準確！\n"
+"警告：您選擇的部分遊戲平台並沒有平台集合。 結果可能會比原來更加不準確！\n"
 "仍然要繼續嗎？"
 
 msgid "SCRAPING IS RUNNING. DO YOU WANT TO STOP IT?"
@@ -1386,16 +1386,16 @@ msgid "CONTROLLER & BLUETOOTH SETTINGS"
 msgstr "控制器與藍牙設定"
 
 msgid "INTERNAL"
-msgstr ""
+msgstr "內部的"
 
 msgid "ANY EXTERNAL"
-msgstr ""
+msgstr "任何外部的"
 
 msgid "maximum 1920x1080"
-msgstr ""
+msgstr "最大 1920x1080"
 
 msgid "maximum 640x480"
-msgstr ""
+msgstr "最大 640x480"
 
 msgid "MAIN MENU"
 msgstr "主選單"
@@ -2463,7 +2463,7 @@ msgid "SAVING METADATAS. PLEASE WAIT..."
 msgstr "正在儲存中繼資料。請稍後..."
 
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
-msgstr ""
+msgstr "您想要切換畫面嗎？"
 
 msgid "Collections"
 msgstr "合輯"
@@ -2736,7 +2736,7 @@ msgid ""
 "NO HOTKEY BUTTON HAS BEEN ASSIGNED. THIS IS REQUIRED FOR EXITING GAMES WITH "
 "A CONTROLLER. DO YOU WANT TO USE THE SELECT BUTTON AS YOUR HOTKEY?"
 msgstr ""
-"您沒有指派任何按鈕為「熱鍵」。 這是使用控制器退出遊戲所必須的按鈕。 你是否要"
+"您沒有指派任何按鈕為「熱鍵」。 這是使用控制器退出遊戲所必須的按鈕。 您是否要"
 "將「選擇鍵」指派為「熱鍵」？"
 
 msgid "SET SELECT AS HOTKEY"
