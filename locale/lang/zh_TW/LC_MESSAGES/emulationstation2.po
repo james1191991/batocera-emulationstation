@@ -949,7 +949,7 @@ msgid "UPDATE IS READY"
 msgstr "已準備好可以更新"
 
 msgid "REBOOT TO APPLY"
-msgstr ""
+msgstr "重開機套用更新"
 
 msgid "REALLY UPDATE?"
 msgstr "確定要更新嗎？"
