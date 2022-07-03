@@ -76,7 +76,7 @@ public:
 	void renderSplashScreen(float opacity = 1, bool swapBuffers = true);
 	void closeSplashScreen();
 
-	void renderHelpPromptsEarly(); // used to render HelpPrompts before a fade
+	void renderHelpPromptsEarly(const Transform4x4f& transform); // used to render HelpPrompts before a fade
 	void setHelpPrompts(const std::vector<HelpPrompt>& prompts, const HelpStyle& style);
 
 	void setScreenSaver(ScreenSaver* screenSaver) { mScreenSaver = screenSaver; }
@@ -112,6 +112,7 @@ private:
 	std::vector<GuiComponent*> hitTest(int x, int y);
 
 	void processPostedFunctions();
+	void renderSindenBorders();
 
 	std::vector<AsyncNotificationComponent*> mAsyncNotificationComponent;
 	void updateAsyncNotifications(int deltaTime);
