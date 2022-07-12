@@ -10,8 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1\n"
 
 msgid "UPDATE AVAILABLE"
 msgstr "有可用的更新"
@@ -388,7 +388,7 @@ msgid "ENCORE MODE"
 msgstr "安可模式"
 
 msgid "Unlocked achievements can be earned again."
-msgstr ""
+msgstr "可以重新再取得以解鎖的成就。"
 
 msgid "AUTOMATIC SCREENSHOT"
 msgstr "自動化螢幕截圖"
@@ -2937,11 +2937,11 @@ msgstr "%d 時"
 
 #, c-format
 msgid "%d mn"
-msgstr ""
+msgstr "%d 分"
 
 #, c-format
 msgid "%d sec"
-msgstr ""
+msgstr "%d 秒"
 
 msgid "SCREEN READER ENABLED"
 msgstr "螢幕閱讀器已啟用"
