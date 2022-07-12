@@ -387,8 +387,8 @@ msgstr "RICH PRESENCE"
 msgid "ENCORE MODE"
 msgstr "安可模式"
 
-msgid "Reset achievements to be able to earn them again."
-msgstr "重置成就以能夠重新達成它們。"
+msgid "Unlocked achievements can be earned again."
+msgstr ""
 
 msgid "AUTOMATIC SCREENSHOT"
 msgstr "自動化螢幕截圖"
@@ -2936,18 +2936,26 @@ msgid "%d h"
 msgstr "%d 時"
 
 #, c-format
-msgid "%d m"
-msgstr "%d 分"
+msgid "%d mn"
+msgstr ""
 
 #, c-format
-msgid "%d s"
-msgstr "%d 秒"
+msgid "%d sec"
+msgstr ""
 
 msgid "SCREEN READER ENABLED"
 msgstr "螢幕閱讀器已啟用"
 
 msgid "SCREEN READER DISABLED"
 msgstr "螢幕閱讀器已停用"
+
+#, c-format
+#~ msgid "%d m"
+#~ msgstr "%d 分"
+
+#, c-format
+#~ msgid "%d s"
+#~ msgstr "%d 秒"
 
 #~ msgid "SCRAPE RATINGS"
 #~ msgstr "搜刮遊戲評分"
