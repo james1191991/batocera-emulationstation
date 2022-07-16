@@ -16,8 +16,8 @@ bool GuiComponent::isLaunchTransitionRunning = false;
 
 GuiComponent::GuiComponent(Window* window) : mWindow(window), mParent(NULL), mOpacity(255),
 	mPosition(Vector3f::Zero()), mOrigin(Vector2f::Zero()), mRotationOrigin(0.5, 0.5), mScaleOrigin(0.5f, 0.5f),
-	mSize(Vector2f::Zero()), mTransform(Transform4x4f::Identity()), mIsProcessing(false), mVisible(true), mShowing(false),
-	mStaticExtra(false), mStoryboardAnimator(nullptr), mScreenOffset(0.0f), mTransformDirty(true), mIsMouseOver(false)
+	mSize(Vector2f::Zero()), mTransform(Transform4x4f::Identity()), mVisible(true), mShowing(false),
+	mStaticExtra(false), mStoryboardAnimator(nullptr), mScreenOffset(0.0f), mTransformDirty(true), mIsMouseOver(false), mChildZIndexDirty(false)
 {
 	mClipRect = Vector4f();
 }
@@ -69,6 +69,12 @@ void GuiComponent::updateSelf(int deltaTime)
 
 void GuiComponent::updateChildren(int deltaTime)
 {
+	if (mChildZIndexDirty)
+	{
+		mChildZIndexDirty = false;
+		sortChildren();
+	}
+
 	for (auto it = mChildren.cbegin(), next_it = it; it != mChildren.cend(); it = next_it)
 	{
 		++next_it;
@@ -231,7 +237,13 @@ float GuiComponent::getZIndex() const
 
 void GuiComponent::setZIndex(float z)
 {
+	if (mZIndex == z)
+		return;
+
 	mZIndex = z;
+
+	if (mParent != nullptr)
+		mParent->mChildZIndexDirty = true;
 }
 
 float GuiComponent::getDefaultZIndex() const
@@ -734,6 +746,11 @@ void GuiComponent::applyTheme(const std::shared_ptr<ThemeData>& theme, const std
 	else
 		setClipRect(Vector4f());
 
+	if (elem->has("onclick"))
+		setClickAction(elem->get<std::string>("onclick"));
+	else
+		setClickAction("");
+
 	applyStoryboard(elem);
 	mTransformDirty = true;
 }
@@ -764,11 +781,6 @@ HelpStyle GuiComponent::getHelpStyle()
 	}
 
 	return style;
-}
-
-bool GuiComponent::isProcessing() const
-{
-	return mIsProcessing;
 }
 
 void GuiComponent::onShow()
@@ -1099,7 +1111,7 @@ void GuiComponent::onScreenOffsetChanged()
 }
 
 bool GuiComponent::hitTest(int x, int y, Transform4x4f& parentTransform, std::vector<GuiComponent*>* pResult)
-{
+{	
 	if (!isVisible())
 	{
 		if (mIsMouseOver)
@@ -1146,10 +1158,12 @@ bool GuiComponent::hitTest(int x, int y, Transform4x4f& parentTransform, std::ve
 
 void GuiComponent::onMouseLeave() 
 {
+
 }
 
 void GuiComponent::onMouseEnter() 
 {
+
 }
 
 void GuiComponent::onMouseMove(int x, int y) 
@@ -1161,3 +1175,39 @@ void GuiComponent::onMouseWheel(int delta)
 {
 
 }
+
+bool GuiComponent::onAction(const std::string& action)
+{
+	if (action == "none")
+		return true;
+
+	if (getParent() != nullptr)
+		return getParent()->onAction(action);
+
+	return false;
+}
+
+bool GuiComponent::onMouseClick(int button, bool pressed, int x, int y)
+{
+	if (button == 1 && !mClickAction.empty())
+	{
+		if (pressed)
+		{
+			mMousePressed = true;	
+			mWindow->setMouseCapture(this);
+		}
+		else if (mMousePressed)
+		{
+			mWindow->releaseMouseCapture();
+			mMousePressed = false;
+
+			if (mIsMouseOver)
+				onAction(mClickAction);			
+		}
+
+		return true;
+	}
+
+	return false;
+}
+

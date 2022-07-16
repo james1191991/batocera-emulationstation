@@ -25,6 +25,7 @@
 #include "guis/GuiTextEditPopupKeyboard.h"
 #include "TextToSpeech.h"
 #include "Binding.h"
+#include "guis/GuiRetroAchievements.h"
 
 // buffer values for scrolling velocity (left, stopped, right)
 const int logoBuffersLeft[] = { -5, -2, -1 };
@@ -410,6 +411,9 @@ void SystemView::showQuickSearch()
 
 void SystemView::showNetplay()
 {
+	if (!SystemData::isNetplayActivated() && SystemConf::getInstance()->getBool("global.netplay"))
+		return;
+
 	if (ApiSystem::getInstance()->getIpAdress() == "NOT CONNECTED")
 		mWindow->pushGui(new GuiMsgBox(mWindow, _("YOU ARE NOT CONNECTED TO A NETWORK"), _("OK"), nullptr));
 	else
@@ -1928,3 +1932,65 @@ void SystemView::onMouseWheel(int delta)
 	mScrollVelocity = 0;
 }
 
+
+
+bool SystemView::onAction(const std::string& action)
+{
+	if (action == "netplay")
+	{
+		showNetplay();
+		return true;
+	}
+
+	if (action == "navigationbar" || action == "back")
+	{
+		showNavigationBar();
+		return true;
+	}
+
+	if (action == "search")
+	{
+		showQuickSearch();
+		return true;
+	}
+
+	if (action == "launch" || action == "open")
+	{
+		stopScrolling();
+		ViewController::get()->goToGameList(getSelected());
+		return true;
+	}
+
+	if (action == "random")
+	{
+		setCursor(SystemData::getRandomSystem());
+		return true;
+	}
+
+	if (action == "prev")
+	{
+		listInput(-1);
+		return true;
+	}
+
+	if (action == "next")
+	{
+		listInput(1);
+		return true;
+	}
+
+	if (action == "cheevos")
+	{
+		if (SystemConf::getInstance()->getBool("global.retroachievements") && !Settings::getInstance()->getBool("RetroachievementsMenuitem") && SystemConf::getInstance()->get("global.retroachievements.username") != "")
+		{
+			if (ApiSystem::getInstance()->getIpAdress() == "NOT CONNECTED")
+				mWindow->pushGui(new GuiMsgBox(mWindow, _("YOU ARE NOT CONNECTED TO A NETWORK"), _("OK"), nullptr));				
+			else
+				GuiRetroAchievements::show(mWindow);
+		}
+
+		return true;
+	}
+	
+	return false;
+}
