@@ -831,7 +831,7 @@ msgid "slideshow"
 msgstr "幻燈片"
 
 msgid "suspend"
-msgstr ""
+msgstr "暫停"
 
 msgid "always"
 msgstr "總是"
