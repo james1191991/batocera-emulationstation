@@ -1936,7 +1936,8 @@ msgstr ""
 msgid "VIDEO MODE"
 msgstr "وضع الفيديو"
 
-msgid "Force the emulator to run at this resolution."
+msgid ""
+"Sets the display's resolution. Does not affect the rendering resolution."
 msgstr ""
 
 msgid "SMOOTH GAMES (BILINEAR FILTERING)"
@@ -2088,12 +2089,51 @@ msgstr "اعرض نشاط وحدة التحكم"
 msgid "SHOW CONTROLLER BATTERY LEVEL"
 msgstr ""
 
+msgid "SINDEN GUNS"
+msgstr ""
+
+msgid "WIIGUNS"
+msgstr ""
+
 #, c-format
 msgid "P%i'S CONTROLLER"
 msgstr ""
 
 msgid "default"
 msgstr "افتراضي"
+
+msgid "GUNS BORDER SIZE"
+msgstr ""
+
+msgid "THIN"
+msgstr ""
+
+msgid "MEDIUM"
+msgstr ""
+
+msgid "BIG"
+msgstr ""
+
+msgid "RECOIL"
+msgstr ""
+
+msgid "GUN"
+msgstr ""
+
+msgid "MACHINE GUN"
+msgstr ""
+
+msgid "QUIET GUN"
+msgstr ""
+
+msgid "QUIET MACHINE GUN"
+msgstr ""
+
+msgid "MODE"
+msgstr ""
+
+msgid "JOYSTICK"
+msgstr ""
 
 msgid "YOU MUST APPLY THE THEME BEFORE EDITING ITS CONFIGURATION"
 msgstr ""
