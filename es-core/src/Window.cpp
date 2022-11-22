@@ -200,8 +200,19 @@ void Window::input(InputConfig* config, Input input)
 	if (config == nullptr)
 		return;
 	
-	if (config->getDeviceIndex() > 0 && Settings::getInstance()->getBool("FirstJoystickOnly"))
-		return;
+	if (config->getDeviceIndex() >= 0 && Settings::getInstance()->getBool("FirstJoystickOnly"))
+	{
+		// Find first player controller info
+		auto playerDevices = InputManager::getInstance()->lastKnownPlayersDeviceIndexes();
+		auto playerDevice = playerDevices.find(0); 
+		if (playerDevice != playerDevices.cend())
+		{
+			if (config->getDeviceIndex() != playerDevice->second.index)
+				return;
+		}
+		else if (config->getDeviceIndex() > 0) // Not found ? Use SDL device index
+			return;
+	}
 
 	if (mScreenSaver) 
 	{
@@ -1087,6 +1098,7 @@ void Window::onThemeChanged(const std::shared_ptr<ThemeData>& theme)
 	{
 		mClock->setFont(Font::get(FONT_SIZE_SMALL));
 		mClock->setColor(0x777777FF);		
+		mClock->setOrigin(Vector2f::Zero());
 		mClock->setHorizontalAlignment(ALIGN_RIGHT);
 		mClock->setVerticalAlignment(ALIGN_TOP);
 		

@@ -364,6 +364,15 @@ msgstr ""
 msgid "RETROACHIEVEMENTS"
 msgstr "RETROUTMERKELSER"
 
+msgid "USERNAME"
+msgstr "BRUKERNAVN"
+
+msgid "PASSWORD"
+msgstr "PASSORD"
+
+msgid "OPTIONS"
+msgstr "VALG"
+
 msgid "HARDCORE MODE"
 msgstr "HARDCORE MODUS"
 
@@ -413,12 +422,6 @@ msgstr ""
 
 msgid "UNLOCK SOUND"
 msgstr ""
-
-msgid "USERNAME"
-msgstr "BRUKERNAVN"
-
-msgid "PASSWORD"
-msgstr "PASSORD"
 
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr ""
@@ -497,9 +500,6 @@ msgstr ""
 
 msgid "CREATE NEW DYNAMIC COLLECTION"
 msgstr ""
-
-msgid "OPTIONS"
-msgstr "VALG"
 
 msgid "SORT COLLECTIONS AND SYSTEMS"
 msgstr ""
@@ -694,6 +694,25 @@ msgstr "LUKK"
 msgid "ARE YOU SURE YOU WANT TO DELETE THIS ITEM?"
 msgstr ""
 
+msgid "FORGET A BLUETOOTH DEVICE"
+msgstr ""
+
+msgid "REMOVE ALL"
+msgstr ""
+
+msgid "NO BLUETOOTH DEVICES FOUND"
+msgstr ""
+
+msgid "REMOVE"
+msgstr ""
+
+msgid "BLUETOOTH DEVICES HAVE BEEN DELETED."
+msgstr ""
+
+#, c-format
+msgid "ARE YOU SURE YOU WANT TO REMOVE '%s' ?"
+msgstr ""
+
 msgid "INPUT"
 msgstr "INNDATA"
 
@@ -754,16 +773,10 @@ msgstr ""
 msgid "YOU ARE NOT CONNECTED TO A NETWORK"
 msgstr ""
 
-msgid "FORGET A BLUETOOTH DEVICE"
+msgid "PAIR A BLUETOOTH DEVICE"
 msgstr ""
 
-msgid "REMOVE ALL"
-msgstr ""
-
-msgid "NO BLUETOOTH DEVICES FOUND"
-msgstr ""
-
-msgid "BLUETOOTH DEVICES HAVE BEEN DELETED."
+msgid "PAIR"
 msgstr ""
 
 msgid "FILE BROWSER"
@@ -804,9 +817,6 @@ msgstr ""
 
 #, c-format
 msgid "'%s' ADDED TO DOWNLOAD QUEUE"
-msgstr ""
-
-msgid "REMOVE"
 msgstr ""
 
 msgid "UNINSTALLATION ADDED TO QUEUE"
@@ -1000,6 +1010,13 @@ msgid ""
 "DO YOU WANT TO UPDATE TO VERSION %s?"
 msgstr ""
 
+#, c-format
+msgid ""
+"UNOFFICIAL SYSTEM MODIFICATIONS DETECTED.\n"
+"UPGRADING COULD BREAK YOUR SYSTEM.\n"
+"DO YOU WANT TO UPDATE TO VERSION %s?"
+msgstr ""
+
 msgid "NETWORK CONNECTION NEEDED"
 msgstr "NETTVERKSTILKOBLING PÅKREVET"
 
@@ -1133,7 +1150,15 @@ msgstr ""
 msgid "SELECT THEMES TO INSTALL/REMOVE"
 msgstr ""
 
-#, c-format
+msgid "All"
+msgstr ""
+
+msgid "Installed"
+msgstr ""
+
+msgid "Available"
+msgstr ""
+
 msgid "CURRENT THEME"
 msgstr ""
 
@@ -2073,7 +2098,22 @@ msgid ""
 "CONFIRM WHEN DONE."
 msgstr ""
 
-msgid "PAIR A BLUETOOTH DEVICE"
+msgid "SINDEN GUN SETTINGS"
+msgstr ""
+
+msgid "WIIMOTE GUN SETTINGS"
+msgstr ""
+
+msgid "BLUETOOTH"
+msgstr ""
+
+msgid "PAIR BLUETOOTH PADS AUTOMATICALLY"
+msgstr ""
+
+msgid "PAIR A BLUETOOTH DEVICE MANUALLY"
+msgstr ""
+
+msgid "DISPLAY OPTIONS"
 msgstr ""
 
 msgid "SHOW CONTROLLER ACTIVITY"
@@ -2082,10 +2122,7 @@ msgstr ""
 msgid "SHOW CONTROLLER BATTERY LEVEL"
 msgstr ""
 
-msgid "SINDEN GUN SETTINGS"
-msgstr ""
-
-msgid "WIIMOTE GUN SETTINGS"
+msgid "PLAYER ASSIGNMENTS"
 msgstr ""
 
 #, c-format
@@ -2219,9 +2256,6 @@ msgid "video"
 msgstr ""
 
 msgid "grid"
-msgstr ""
-
-msgid "DISPLAY OPTIONS"
 msgstr ""
 
 msgid "LIST TRANSITION"
