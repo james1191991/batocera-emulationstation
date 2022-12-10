@@ -379,7 +379,7 @@ msgid "HARDCORE MODE"
 msgstr "硬派模式"
 
 msgid "Disable loading states, rewind and cheats for more points."
-msgstr ""
+msgstr "停用載入即時存檔、倒帶及作弊功能以取得更多點數。"
 
 msgid "LEADERBOARDS"
 msgstr "排行榜"
@@ -391,7 +391,7 @@ msgid "VERBOSE MODE"
 msgstr "詳細模式"
 
 msgid "Show achievement progression on game launch and other notifications."
-msgstr ""
+msgstr "在遊戲啟動及其他通知顯示成就進度。"
 
 msgid "RICH PRESENCE"
 msgstr "RICH PRESENCE"
@@ -583,10 +583,10 @@ msgid "%d%% (%d of %d)"
 msgstr "%d%% (第 %d 個，共 %d 個)"
 
 msgid "Points (hardcore)"
-msgstr ""
+msgstr "點數（硬派）"
 
 msgid "Softcore points"
-msgstr ""
+msgstr "軟派點數"
 
 msgid "Rank"
 msgstr "階級"
@@ -655,10 +655,10 @@ msgid "SORT GAMES BY"
 msgstr "排序遊戲依"
 
 msgid "DYNAMIC COLLECTION"
-msgstr ""
+msgstr "動態合輯"
 
 msgid "CUSTOM COLLECTION"
-msgstr ""
+msgstr "自定義合輯"
 
 msgid "DELETE COLLECTION"
 msgstr "刪除合輯"
@@ -713,7 +713,7 @@ msgstr "藍牙裝置已被刪除。"
 
 #, c-format
 msgid "ARE YOU SURE YOU WANT TO REMOVE '%s' ?"
-msgstr ""
+msgstr "您確定要移除「%s」嗎？"
 
 msgid "INPUT"
 msgstr "輸入"
@@ -779,7 +779,7 @@ msgid "PAIR A BLUETOOTH DEVICE"
 msgstr "配對藍牙裝置"
 
 msgid "PAIR"
-msgstr ""
+msgstr "配對"
 
 msgid "FILE BROWSER"
 msgstr "檔案瀏覽器"
@@ -1020,6 +1020,9 @@ msgid ""
 "UPGRADING COULD BREAK YOUR SYSTEM.\n"
 "DO YOU WANT TO UPDATE TO VERSION %s?"
 msgstr ""
+"偵測到非官方的系統改動。\n"
+"升級可能會損毀您的系統。\n"
+"您想要更新至版本 %s 嗎？"
 
 msgid "NETWORK CONNECTION NEEDED"
 msgstr "需要連線到網際網路"
@@ -1157,13 +1160,13 @@ msgid "SELECT THEMES TO INSTALL/REMOVE"
 msgstr "選擇要安裝或移除的佈景主題"
 
 msgid "All"
-msgstr ""
+msgstr "全部"
 
 msgid "Installed"
-msgstr ""
+msgstr "已安裝"
 
 msgid "Available"
-msgstr ""
+msgstr "可用的"
 
 msgid "CURRENT THEME"
 msgstr "目前的佈景主題"
@@ -1185,7 +1188,7 @@ msgid "%d%% complete"
 msgstr "已完成 %d%%"
 
 msgid "SAVESTATE MANAGER"
-msgstr ""
+msgstr "即時存檔管理員"
 
 msgid "START NEW GAME"
 msgstr "新遊戲"
@@ -1813,7 +1816,7 @@ msgid "SCREEN ROTATION"
 msgstr "螢幕旋轉"
 
 msgid "0 DEGREES"
-msgstr ""
+msgstr "0 度"
 
 msgid "90 DEGREES"
 msgstr "90 度"
@@ -1973,7 +1976,7 @@ msgstr "影像模式"
 
 msgid ""
 "Sets the display's resolution. Does not affect the rendering resolution."
-msgstr ""
+msgstr "指定顯示裝置的解析度。不會影響渲染解析度。"
 
 msgid "SMOOTH GAMES (BILINEAR FILTERING)"
 msgstr "平滑遊戲畫面（雙線性過濾）"
@@ -2057,7 +2060,7 @@ msgid "AUTO SAVE/LOAD"
 msgstr "自動儲存/載入"
 
 msgid "Load latest savestate on game launch and savestate when exiting game."
-msgstr ""
+msgstr "在遊戲啟動時載入最後的即時存檔，並在退出遊戲時儲存即時存檔。"
 
 msgid "INCREMENTAL SAVESTATES"
 msgstr "遞增即時存檔"
@@ -2081,7 +2084,7 @@ msgid "Use current slot on a new game."
 msgstr "將目前的存檔槽用於新遊戲。"
 
 msgid "SHOW SAVESTATE MANAGER"
-msgstr ""
+msgstr "顯示即時存檔管理員"
 
 msgid "ALWAYS"
 msgstr "總是"
@@ -2090,7 +2093,7 @@ msgid "IF NOT EMPTY"
 msgstr "若不為空時"
 
 msgid "Display savestate manager before launching a game."
-msgstr ""
+msgstr "在遊戲啟動前顯示即時存檔管理員。"
 
 msgid "PER SYSTEM ADVANCED CONFIGURATION"
 msgstr "遊戲平台個別進階設定"
@@ -2119,19 +2122,19 @@ msgstr ""
 "鍵」。 長按任意按鈕可跳過您無法指派的按鍵。 完成時按南功能鍵確認。"
 
 msgid "SINDEN GUN SETTINGS"
-msgstr ""
+msgstr "SINDEN 光線槍設定"
 
 msgid "WIIMOTE GUN SETTINGS"
-msgstr ""
+msgstr "WIIMOTE 光線槍設定"
 
 msgid "BLUETOOTH"
-msgstr ""
+msgstr "藍牙"
 
 msgid "PAIR BLUETOOTH PADS AUTOMATICALLY"
-msgstr ""
+msgstr "自動配對藍牙手把"
 
 msgid "PAIR A BLUETOOTH DEVICE MANUALLY"
-msgstr ""
+msgstr "手動配對藍牙裝置"
 
 msgid "DISPLAY OPTIONS"
 msgstr "顯示設定"
@@ -2143,7 +2146,7 @@ msgid "SHOW CONTROLLER BATTERY LEVEL"
 msgstr "顯示遊戲控制器的電池電量"
 
 msgid "PLAYER ASSIGNMENTS"
-msgstr ""
+msgstr "玩家分配"
 
 #, c-format
 msgid "P%i'S CONTROLLER"
@@ -2153,49 +2156,49 @@ msgid "default"
 msgstr "預設值"
 
 msgid "BORDER SIZE"
-msgstr ""
+msgstr "邊框大小"
 
 msgid "THIN"
-msgstr ""
+msgstr "窄"
 
 msgid "MEDIUM"
-msgstr ""
+msgstr "中等"
 
 msgid "BIG"
-msgstr ""
+msgstr "大"
 
 msgid "BORDER MODE"
-msgstr ""
+msgstr "邊框模式"
 
 msgid "NORMAL"
-msgstr ""
+msgstr "一般"
 
 msgid "IN GAME ONLY"
-msgstr ""
+msgstr "僅在遊戲中"
 
 msgid "HIDDEN"
-msgstr ""
+msgstr "隱藏"
 
 msgid "RECOIL"
-msgstr ""
+msgstr "收縮"
 
 msgid "GUN"
-msgstr ""
+msgstr "光線槍"
 
 msgid "MACHINE GUN"
-msgstr ""
+msgstr "機槍"
 
 msgid "QUIET GUN"
-msgstr ""
+msgstr "靜音槍"
 
 msgid "QUIET MACHINE GUN"
-msgstr ""
+msgstr "靜音機槍"
 
 msgid "MODE"
-msgstr ""
+msgstr "模式"
 
 msgid "JOYSTICK"
-msgstr ""
+msgstr "搖桿"
 
 msgid "YOU MUST APPLY THE THEME BEFORE EDITING ITS CONFIGURATION"
 msgstr "在編輯主題設定之前必須先套用該佈景主題"
@@ -2402,10 +2405,10 @@ msgid "REALLY RESTART?"
 msgstr "確定要重新啟動嗎?"
 
 msgid "SUSPEND SYSTEM"
-msgstr ""
+msgstr "暫停系統"
 
 msgid "REALLY SUSPEND ?"
-msgstr ""
+msgstr "確定要暫停嗎？"
 
 msgid "SHUTDOWN SYSTEM"
 msgstr "系統關機"
@@ -3789,8 +3792,8 @@ msgstr "螢幕閱讀器已停用"
 #~ "THE \"RANDOM VIDEO\" SCREENSAVER SHOWS VIDEOS FROM YOUR GAMELIST.\n"
 #~ "IF YOU DON'T HAVE VIDEOS, OR IF NONE OF THEM CAN BE PLAYED AFTER A FEW "
 #~ "ATTEMPTS, IT WILL DEFAULT TO \"BLACK\".\n"
-#~ "MORE OPTIONS IN THE \"UI SETTINGS\" -> \"RANDOM VIDEO SCREENSAVER "
-#~ "SETTINGS\" MENU."
+#~ "MORE OPTIONS IN THE \"UI SETTINGS\" -> \"RANDOM VIDEO SCREENSAVER SETTINGS"
+#~ "\" MENU."
 #~ msgstr ""
 #~ "螢幕保護 \\\"隨機影片\\\" 將顯示遊戲列表中的影片。\n"
 #~ "如果遊戲列表中沒有影片，或者在嘗試播放失敗幾次後，顯示為\\\"黑屏\"。\n"
