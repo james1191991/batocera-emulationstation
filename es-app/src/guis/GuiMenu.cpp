@@ -714,7 +714,7 @@ void GuiMenu::openDeveloperSettings()
 
 	auto invertJoy = std::make_shared<SwitchComponent>(mWindow);
 	invertJoy->setState(Settings::getInstance()->getBool("InvertButtons"));
-	s->addWithLabel(_("SWITCH A & B BUTTONS IN EMULATIONSTATION"), invertJoy);
+	s->addWithDescription(_("SWITCH CONFIRM & CANCEL BUTTONS IN EMULATIONSTATION"), _("Switches the South and East buttons' functionality"), invertJoy);
 	s->addSaveFunc([this, s, invertJoy]
 	{
 		if (Settings::getInstance()->setBool("InvertButtons", invertJoy->getState()))
@@ -943,11 +943,12 @@ void GuiMenu::openSystemSettings()
 	language_choice->add("ENGLISH (UK)", 	     "en_GB", language == "en_GB");
 	language_choice->add("ESPAÑOL", 	     "es_ES", language == "es_ES" || language == "es");
 	language_choice->add("ESPAÑOL MEXICANO",     "es_MX", language == "es_MX");
-	language_choice->add("BASQUE",               "eu_ES", language == "eu_ES");
+	language_choice->add("EUSKARA",               "eu_ES", language == "eu_ES");
 	language_choice->add("SUOMI",                "fi_FI", language == "fi_FI");
 	language_choice->add("FRANÇAIS",             "fr_FR", language == "fr_FR" || language == "fr");
 	language_choice->add("עברית",                "he_IL", language == "he_IL");
 	language_choice->add("HUNGARIAN",            "hu_HU", language == "hu_HU");
+	language_choice->add("BAHASA INDONESIA",     "id_ID", language == "id_ID");
 	language_choice->add("ITALIANO",             "it_IT", language == "it_IT");
 	language_choice->add("JAPANESE", 	     "ja_JP", language == "ja_JP");
 	language_choice->add("KOREAN",   	     "ko_KR", language == "ko_KR" || language == "ko");
@@ -959,6 +960,7 @@ void GuiMenu::openSystemSettings()
 	language_choice->add("PORTUGUÊS BRASILEIRO", "pt_BR", language == "pt_BR");
 	language_choice->add("PORTUGUÊS PORTUGAL",   "pt_PT", language == "pt_PT");
 	language_choice->add("РУССКИЙ",              "ru_RU", language == "ru_RU");
+	language_choice->add("SLOVENČINA", 	     "sk_SK", language == "sk_SK");
 	language_choice->add("SVENSKA", 	     "sv_SE", language == "sv_SE");
 	language_choice->add("TÜRKÇE",  	     "tr_TR", language == "tr_TR");
 	language_choice->add("Українська",           "uk_UA", language == "uk_UA");
@@ -2351,11 +2353,10 @@ void GuiMenu::openControllersSettings(int autoSel)
 	s->addEntry(_("CONTROLLER MAPPING"), false, [window, this, s]
 	{
 		window->pushGui(new GuiMsgBox(window,
-			_("YOU ARE GOING TO MAP A CONTROLLER. MAP BASED ON THE BUTTON'S POSITION "
-				"RELATIVE TO ITS EQUIVALENT ON A SNES CONTROLLER, NOT ITS PHYSICAL LABEL. "
-				"IF YOU DO NOT HAVE A SPECIAL KEY FOR HOTKEY, USE THE SELECT BUTTON. SKIP "
-				"ALL BUTTONS/STICKS YOU DO NOT HAVE BY HOLDING ANY KEY. PRESS THE "
-				"SOUTH BUTTON TO CONFIRM WHEN DONE."), 
+			_("YOU ARE GOING TO MAP A CONTROLLER. MAP BASED ON THE BUTTON'S POSITION, "
+				"NOT ITS PHYSICAL LABEL. IF YOU DO NOT HAVE A SPECIAL BUTTON FOR HOTKEY, "
+				"USE THE SELECT BUTTON. SKIP ALL BUTTONS/STICKS YOU DO NOT HAVE BY "
+				"HOLDING ANY BUTTON. PRESS THE SOUTH BUTTON TO CONFIRM WHEN DONE."),
 			_("OK"), [window, this, s] { window->pushGui(new GuiDetectDevice(window, false, [this, s] { s->setSave(false); delete s; this->openControllersSettings(); })); },
 			_("CANCEL"), nullptr,
 			GuiMsgBoxIcon::ICON_INFORMATION));
@@ -2760,7 +2761,11 @@ void GuiMenu::openThemeConfiguration(Window* mWindow, GuiComponent* s, std::shar
 				if (it->name == selectedName)
 					selectedColorSet = it;
 
-			std::shared_ptr<OptionListComponent<std::string>> item = std::make_shared<OptionListComponent<std::string> >(mWindow, _(("THEME " + Utils::String::toUpper(subset)).c_str()), false);
+			std::string displayName;
+			if (!themeColorSets.empty())
+				displayName = themeColorSets.cbegin()->subSetDisplayName;
+
+			std::shared_ptr<OptionListComponent<std::string>> item = std::make_shared<OptionListComponent<std::string> >(mWindow, displayName.empty() ? _(("THEME " + Utils::String::toUpper(subset)).c_str()) : displayName, false);
 			item->setTag(!perSystemSettingName.empty() ? perSystemSettingName : settingName);
 
 			std::string defaultName;
@@ -2788,8 +2793,7 @@ void GuiMenu::openThemeConfiguration(Window* mWindow, GuiComponent* s, std::shar
 				item->selectFirstItem();
 
 			if (!themeColorSets.empty())
-			{
-				std::string displayName = themeColorSets.cbegin()->subSetDisplayName;
+			{				
 				if (!displayName.empty())
 				{
 					bool hasApplyToSubset = themeColorSets.cbegin()->appliesTo.size() > 0;

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: batocera-es v36beta(2022/12/09)\n"
+"Project-Id-Version: batocera-es v36beta(2022/02/09)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-23 13:22+0200\n"
-"PO-Revision-Date: 2022-12-10 07:45+0900\n"
+"PO-Revision-Date: 2023-02-09 17:59+0900\n"
 "Last-Translator: mikakunin\n"
 "Language-Team: mikakunin\n"
 "Language: ja\n"
@@ -420,13 +420,13 @@ msgid ""
 msgstr "対象となるアチーブメントを獲得できる場合、右下隅にアイコンを表示します"
 
 msgid "RETROACHIEVEMENT UNLOCK SOUND"
-msgstr "RETROACHIEVEMENTサウンドのロック解除"
+msgstr "RETROACHIEVEMENTロック解除効果音"
 
 msgid "none"
 msgstr "無し"
 
 msgid "UNLOCK SOUND"
-msgstr "サウンドのロック解除"
+msgstr "ロック解除効果音"
 
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "メインメニューにRETROACHIEVEMENTSエントリを表示"
@@ -519,7 +519,7 @@ msgid "BY HARDWARE TYPE"
 msgstr "ゲーム機器別"
 
 msgid "BY MANUFACTURER AND TYPE"
-msgstr ""
+msgstr "メーカーとゲーム機別"
 
 msgid "BY RELEASE YEAR"
 msgstr "リリース年別"
@@ -682,7 +682,7 @@ msgid "VIEW CUSTOMIZATION"
 msgstr "表示のカスタマイズ"
 
 msgid "VIEW PAD TO KEYBOARD INFORMATION"
-msgstr "パッドからキーボード情報を表示"
+msgstr "パッドキー設定情報を表示"
 
 msgid "ADVANCED SYSTEM OPTIONS"
 msgstr "システム詳細設定"
@@ -949,7 +949,7 @@ msgid "CUSTOM IMAGE FILE EXTENSIONS"
 msgstr "カスタム画像ファイル拡張子"
 
 msgid "PAD TO KEYBOARD CONFIGURATION"
-msgstr "キーボードキーをパッドに割り当てる設定"
+msgstr "パッドキー設定(キーボードをパッドに割り当てる)"
 
 msgid "SELECT ACTIONS TO CHANGE"
 msgstr ""
@@ -1081,13 +1081,13 @@ msgid "COMPATIBLE CORE(S)"
 msgstr "互換性のあるコア"
 
 msgid "VIEW THIS GAME'S ACHIEVEMENTS"
-msgstr "このゲームのACHIEVEMENTSを表示"
+msgstr "このゲームのアチーブメントを表示"
 
 msgid "GAME"
 msgstr "ゲーム"
 
 msgid "SAVE STATES"
-msgstr "セーブマネージャ"
+msgstr "セーブ"
 
 msgid "OPEN"
 msgstr "開く"
@@ -1150,10 +1150,10 @@ msgid "SCRAPE"
 msgstr "スクレイプ"
 
 msgid "EDIT PADTOKEY PROFILE"
-msgstr "パッドキープロファイルの編集"
+msgstr "パッドキー設定の編集"
 
 msgid "CREATE PADTOKEY PROFILE"
-msgstr "パッドキープロファイルの作成"
+msgstr "パッドキー設定の作成"
 
 msgid "ADVANCED GAME OPTIONS"
 msgstr "このゲームの詳細設定"
@@ -1189,10 +1189,10 @@ msgid "Unlocked on"
 msgstr "ロック解除"
 
 msgid "THIS GAME HAS NO ACHIEVEMENTS YET"
-msgstr "このゲームにはまだACHIEVEMENTSがありません"
+msgstr "このゲームにはまだアチーブメントがありません"
 
 msgid "Achievements won"
-msgstr "ACHIEVEMENTS達成"
+msgstr "アチーブメント達成"
 
 #, c-format
 msgid "%d%% complete"
@@ -1492,7 +1492,7 @@ msgid "KODI MEDIA CENTER"
 msgstr "KODI メディアセンター"
 
 msgid "GAME SETTINGS"
-msgstr "システム(エミュレータ)設定"
+msgstr "ゲーム(エミュレータ)設定"
 
 msgid "USER INTERFACE SETTINGS"
 msgstr "ユーザーインターフェイス 設定"
@@ -1513,7 +1513,7 @@ msgid "UPDATES & DOWNLOADS"
 msgstr "更新とダウンロード"
 
 msgid "SYSTEM SETTINGS"
-msgstr "BATOCRA 設定"
+msgstr "システム 設定"
 
 msgid "UNLOCK USER INTERFACE MODE"
 msgstr "ユーザーインターフェイスモードのロック解除"
@@ -1614,7 +1614,7 @@ msgid "REDETECT ALL GAMES' LANG/REGION"
 msgstr "すべてのゲームの言語/地域を再検出"
 
 msgid "FIND ALL GAMES WITH NETPLAY/ACHIEVEMENTS"
-msgstr "ネットプレイ/ACHIEVEMENTS ですべてのゲームを検索"
+msgstr "ネットプレイ/アチーブメント ですべてのゲームを検索"
 
 msgid "DATA MANAGEMENT"
 msgstr "データ管理"
@@ -1674,8 +1674,11 @@ msgstr "RETROARCH メニュードライバー"
 msgid "AUTO"
 msgstr "自動"
 
-msgid "SWITCH A & B BUTTONS IN EMULATIONSTATION"
-msgstr "ESメニューでの AとB ボタンの入れ替え"
+msgid "SWITCH CONFIRM & CANCEL BUTTONS IN EMULATIONSTATION"
+msgstr "ESメニューの 決定 とキャンセル のボタン入れ替え"
+
+msgid "Switches the South and East buttons' functionality"
+msgstr "emulationstationで、南(下)と東(右)のボタンの機能を入れ替えます"
 
 msgid "ACCESS GAME OPTIONS WITH NORTH BUTTON"
 msgstr "△(上)ボタン長押しでゲーム設定を開く"
@@ -1859,7 +1862,7 @@ msgid "SILENT VIDEO/USER SET SPLASH"
 msgstr "音声無し動画スプラッシュ"
 
 msgid "BATOCERA SPLASH IMAGE"
-msgstr "BATOCERA スプラッシュ画像"
+msgstr "スプラッシュ画像"
 
 msgid "SPLASH SETTING"
 msgstr "スプラッシュ設定"
@@ -2136,23 +2139,22 @@ msgid "CONTROLLER MAPPING"
 msgstr "ボタン設定"
 
 msgid ""
-"YOU ARE GOING TO MAP A CONTROLLER. MAP BASED ON THE BUTTON'S POSITION "
-"RELATIVE TO ITS EQUIVALENT ON A SNES CONTROLLER, NOT ITS PHYSICAL LABEL. IF "
-"YOU DO NOT HAVE A SPECIAL KEY FOR HOTKEY, USE THE SELECT BUTTON. SKIP ALL "
-"BUTTONS/STICKS YOU DO NOT HAVE BY HOLDING ANY KEY. PRESS THE SOUTH BUTTON TO "
-"CONFIRM WHEN DONE."
+"YOU ARE GOING TO MAP A CONTROLLER. MAP BASED ON THE BUTTON'S POSITION, NOT "
+"ITS PHYSICAL LABEL. IF YOU DO NOT HAVE A SPECIAL BUTTON FOR HOTKEY, USE THE "
+"SELECT BUTTON. SKIP ALL BUTTONS/STICKS YOU DO NOT HAVE BY HOLDING ANY "
+"BUTTON. PRESS THE SOUTH BUTTON TO CONFIRM WHEN DONE."
 msgstr ""
-"コントローラーのボタン設定を行います。 物理的なものではなく、スーファミコント"
-"ローラー上の 同等のボタンに対するボタン位置に基づいて設定します。 ホットキー"
-"用の特別なボタンがない場合は、 「セレクト」ボタンを使用してください。 ボタン"
-"を長押しで、割り当てられない ボタン/スティックをスキップします。 完了したら、"
-"下（決定）ボタンを押して確認します。"
+"コントローラーのボタン設定を行います。 このコントローラのボタンのラベル通りで"
+"はなく、システムで 使用するボタン位置に基づいて設定します。（A,B,X,Yの位置）"
+"ホットキー用の特別なボタン（PSやHOME）がない場合は、 「セレクト」ボタンを使用"
+"してください。 ボタンを長押しで、割り当てられないボタン/スティックを スキップ"
+"します。 完了したら、決定（下）ボタンを押して確認します。"
 
 msgid "SINDEN GUN SETTINGS"
 msgstr "シンデン ライトガンの設定"
 
 msgid "WIIMOTE GUN SETTINGS"
-msgstr "wii リモコン(銃)の設定"
+msgstr "wii リモコンの用途設定"
 
 msgid "BLUETOOTH"
 msgstr "BLUETOOTH"
@@ -2195,7 +2197,7 @@ msgid "BIG"
 msgstr "大"
 
 msgid "BORDER MODE"
-msgstr "BORDER MODE"
+msgstr "境界モード"
 
 msgid "NORMAL"
 msgstr "標準"
@@ -2207,25 +2209,25 @@ msgid "HIDDEN"
 msgstr "非表示"
 
 msgid "RECOIL"
-msgstr "反動"
+msgstr "トリガーの反動"
 
 msgid "GUN"
 msgstr "ガンコン"
 
 msgid "MACHINE GUN"
-msgstr "機関銃"
+msgstr "マシンガン"
 
 msgid "QUIET GUN"
-msgstr "静かな銃"
+msgstr "サイレントガン(弱反動)"
 
 msgid "QUIET MACHINE GUN"
-msgstr "静音機関銃"
+msgstr "サイレントマシンガン(弱反動)"
 
 msgid "MODE"
-msgstr "モード"
+msgstr "モード選択"
 
 msgid "JOYSTICK"
-msgstr "ジョイスティック"
+msgstr "ゲームパッド"
 
 msgid "YOU MUST APPLY THE THEME BEFORE EDITING ITS CONFIGURATION"
 msgstr "設定を編集する前にテーマを適用する必要があります"
@@ -2264,10 +2266,10 @@ msgid "SHOW HIDDEN FILES"
 msgstr "非表示設定ファイルを表示"
 
 msgid "SHOW FOLDERS"
-msgstr "フォルダを表示"
+msgstr "romサブフォルダの表示"
 
 msgid "having multiple games"
-msgstr "ゲームがあるフォルダ"
+msgstr "2個以上romがあるフォルダ"
 
 msgid "SHOW '..' PARENT FOLDER"
 msgstr "親フォルダ'..'を表示"
@@ -2481,7 +2483,7 @@ msgid "FULL BOOT"
 msgstr "フルブート"
 
 msgid "EMULATED WIIMOTES"
-msgstr "WIIリモートのエミュレート"
+msgstr "WIIリモートをエミュレート"
 
 msgid "CHANGE SCREEN LAYOUT"
 msgstr "スクリーンレイアウトの変更"
@@ -2649,7 +2651,9 @@ msgstr "プレイ回数"
 #, c-format
 msgid "This folder contains %i game, including :%s"
 msgid_plural "This folder contains %i games, including :%s"
-msgstr[0] "このフォルダには、%i種のゲームがあります。%sフォルダ"
+msgstr[0] ""
+"このフォルダには、\n"
+"%i種類のゲームがあります。%s"
 
 msgid "No Entries Found"
 msgstr "エントリが見つかりません"
@@ -2667,7 +2671,7 @@ msgid "GAME OPTIONS"
 msgstr "ゲーム設定"
 
 msgid "FAVORITE"
-msgstr "気に入り"
+msgstr "お気に入り"
 
 msgid ""
 "A valid account is required. Please register an account on https://"
@@ -2860,7 +2864,7 @@ msgid "ALREADY PLAYED"
 msgstr "プレイ済み"
 
 msgid "HAS ACHIEVEMENTS"
-msgstr "ACHIEVEMENTSがある"
+msgstr "アチーブメントがある"
 
 msgid "VERTICAL"
 msgstr "縦表示"
@@ -2908,20 +2912,20 @@ msgid "SPACE"
 msgstr "空白"
 
 msgctxt "joystick"
-msgid "UP"
-msgstr "上"
+msgid "NORTH"
+msgstr "N ボタン / 上位置"
 
 msgctxt "joystick"
-msgid "DOWN"
-msgstr "下"
+msgid "SOUTH"
+msgstr "S ボタン / 下位置"
 
 msgctxt "joystick"
-msgid "LEFT"
-msgstr "左"
+msgid "EAST"
+msgstr "E ボタン / 右位置"
 
 msgctxt "joystick"
-msgid "RIGHT"
-msgstr "右"
+msgid "WEST"
+msgstr "W ボタン / 左位置"
 
 msgctxt "joystick"
 msgid "START"
@@ -2930,6 +2934,22 @@ msgstr "スタート"
 msgctxt "joystick"
 msgid "SELECT"
 msgstr "セレクト"
+
+msgctxt "joystick"
+msgid "D-PAD UP"
+msgstr "十字キー上"
+
+msgctxt "joystick"
+msgid "D-PAD DOWN"
+msgstr "十字キー下"
+
+msgctxt "joystick"
+msgid "D-PAD LEFT"
+msgstr "十字キー左"
+
+msgctxt "joystick"
+msgid "D-PAD RIGHT"
+msgstr "十字キー右"
 
 msgctxt "joystick"
 msgid "LEFT ANALOG UP"
@@ -2964,6 +2984,30 @@ msgid "RIGHT ANALOG RIGHT"
 msgstr "右アナログST 右"
 
 msgctxt "joystick"
+msgid "LEFT SHOULDER"
+msgstr "左 ショルダー(L1)"
+
+msgctxt "joystick"
+msgid "RIGHT SHOULDER"
+msgstr "右 ショルダー(R1)"
+
+msgctxt "joystick"
+msgid "LEFT TRIGGER"
+msgstr "左 トリガー(L2)"
+
+msgctxt "joystick"
+msgid "RIGHT TRIGGER"
+msgstr "右 トリガー(R2)"
+
+msgctxt "joystick"
+msgid "LEFT STICK PRESS"
+msgstr "左 アナログST押(L3)"
+
+msgctxt "joystick"
+msgid "RIGHT STICK PRESS"
+msgstr "右 アナログST押(R3)"
+
+msgctxt "joystick"
 msgid "HOTKEY"
 msgstr "ホットキー"
 
@@ -2981,7 +3025,7 @@ msgid "GAMEPAD %i"
 msgstr "ゲームパッド %i"
 
 msgid "HOLD ANY BUTTON TO SKIP"
-msgstr "何かのボタンを押し続けるとスキップ"
+msgstr "キー/ボタンを押し続けるとスキップ"
 
 msgid "-NOT DEFINED-"
 msgstr "-未割当-"

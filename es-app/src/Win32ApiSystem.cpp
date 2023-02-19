@@ -465,7 +465,7 @@ std::pair<std::string, int> Win32ApiSystem::installBatoceraBezel(std::string bez
 			std::string themeFileName = Utils::FileSystem::getFileName(themeUrl);
 			std::string zipFile = Utils::FileSystem::getCanonicalPath(Paths::getUserDecorationsPath() + "/" + themeFileName + ".zip");
 
-			if (downloadGitRepository(themeUrl, zipFile, bezelsystem, func))
+			if (downloadGitRepository(themeUrl, "master", zipFile, bezelsystem, func))
 			{
 				std::string theBezelProject = Paths::getUserDecorationsPath() + "/thebezelproject/games/"+ bezelsystem;
 				Utils::FileSystem::createDirectory(theBezelProject);
@@ -1037,6 +1037,22 @@ std::vector<std::string> Win32ApiSystem::getShaderList(const std::string& system
 									break;
 
 								sysInfo.push_back(Utils::String::trim(line));
+							}
+						}
+
+						if (!take && sysInfo.size() == 0)
+						{
+							for (auto line : lines)
+							{
+								if (Utils::String::startsWith(line, "default:"))
+									take = true;
+								else if (take)
+								{
+									if (!Utils::String::startsWith(line, " "))
+										break;
+
+									sysInfo.push_back(Utils::String::trim(line));
+								}
 							}
 						}
 

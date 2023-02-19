@@ -1656,7 +1656,10 @@ msgstr ""
 msgid "AUTO"
 msgstr "AUTO"
 
-msgid "SWITCH A & B BUTTONS IN EMULATIONSTATION"
+msgid "SWITCH CONFIRM & CANCEL BUTTONS IN EMULATIONSTATION"
+msgstr ""
+
+msgid "Switches the South and East buttons' functionality"
 msgstr ""
 
 msgid "ACCESS GAME OPTIONS WITH NORTH BUTTON"
@@ -2110,11 +2113,10 @@ msgid "CONTROLLER MAPPING"
 msgstr ""
 
 msgid ""
-"YOU ARE GOING TO MAP A CONTROLLER. MAP BASED ON THE BUTTON'S POSITION "
-"RELATIVE TO ITS EQUIVALENT ON A SNES CONTROLLER, NOT ITS PHYSICAL LABEL. IF "
-"YOU DO NOT HAVE A SPECIAL KEY FOR HOTKEY, USE THE SELECT BUTTON. SKIP ALL "
-"BUTTONS/STICKS YOU DO NOT HAVE BY HOLDING ANY KEY. PRESS THE SOUTH BUTTON TO "
-"CONFIRM WHEN DONE."
+"YOU ARE GOING TO MAP A CONTROLLER. MAP BASED ON THE BUTTON'S POSITION, NOT "
+"ITS PHYSICAL LABEL. IF YOU DO NOT HAVE A SPECIAL BUTTON FOR HOTKEY, USE THE "
+"SELECT BUTTON. SKIP ALL BUTTONS/STICKS YOU DO NOT HAVE BY HOLDING ANY "
+"BUTTON. PRESS THE SOUTH BUTTON TO CONFIRM WHEN DONE."
 msgstr ""
 
 msgid "SINDEN GUN SETTINGS"
@@ -2868,19 +2870,19 @@ msgid "SPACE"
 msgstr "ESPACI"
 
 msgctxt "joystick"
-msgid "UP"
+msgid "NORTH"
 msgstr ""
 
 msgctxt "joystick"
-msgid "DOWN"
+msgid "SOUTH"
 msgstr ""
 
 msgctxt "joystick"
-msgid "LEFT"
+msgid "EAST"
 msgstr ""
 
 msgctxt "joystick"
-msgid "RIGHT"
+msgid "WEST"
 msgstr ""
 
 msgctxt "joystick"
@@ -2889,6 +2891,22 @@ msgstr ""
 
 msgctxt "joystick"
 msgid "SELECT"
+msgstr ""
+
+msgctxt "joystick"
+msgid "D-PAD UP"
+msgstr ""
+
+msgctxt "joystick"
+msgid "D-PAD DOWN"
+msgstr ""
+
+msgctxt "joystick"
+msgid "D-PAD LEFT"
+msgstr ""
+
+msgctxt "joystick"
+msgid "D-PAD RIGHT"
 msgstr ""
 
 msgctxt "joystick"
@@ -2921,6 +2939,30 @@ msgstr ""
 
 msgctxt "joystick"
 msgid "RIGHT ANALOG RIGHT"
+msgstr ""
+
+msgctxt "joystick"
+msgid "LEFT SHOULDER"
+msgstr ""
+
+msgctxt "joystick"
+msgid "RIGHT SHOULDER"
+msgstr ""
+
+msgctxt "joystick"
+msgid "LEFT TRIGGER"
+msgstr ""
+
+msgctxt "joystick"
+msgid "RIGHT TRIGGER"
+msgstr ""
+
+msgctxt "joystick"
+msgid "LEFT STICK PRESS"
+msgstr ""
+
+msgctxt "joystick"
+msgid "RIGHT STICK PRESS"
 msgstr ""
 
 msgctxt "joystick"

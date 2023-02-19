@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <systems>
+  <system name="amstradcpc">
+    <game gun="phaser">americanturboking</game>
+    <game gun="gunstick">bestialwarrior</game>
+    <game gun="phaser">billythekid</game>
+    <game gun="phaser">bronxstreetcop</game>
+    <game gun="phaser">bullseye</game>
+    <game gun="gunstick">cosmicsheriff</game>
+    <game gun="gunstick">elequipoa</game>
+    <game gun="phaser">f16fightingfalcon</game>
+    <game gun="gunstick">guillermotell</game>
+    <game gun="phaser">junglewarfare</game>
+    <game gun="gunstick">mikegunner</game>
+    <game gun="phaser">missilegroundzero</game>
+    <game gun="phaser">operationwolf</game>
+    <game gun="gunstick">outlaws</game>
+    <game gun="phaser">solarinvasion</game>
+    <game gun="gunstick">solo</game>
+    <game gun="gunstick">sootland</game>
+    <game gun="gunstick">spacesmugglers</game>
+    <game gun="gunstick">targetplus</game>
+    <game gun="gunstick">trigger</game>
+    <game gun="phaser">robotattack</game>
+    <game gun="phaser">rookie</game>
+  </system>
   <system name="c64">
     <game>armydays</game>
     <game>babyblues</game>
@@ -62,6 +86,10 @@
     <game>deathcrimsonox</game>
     <game>houseofthedead2</game>
     <game>virtuacop2</game>
+  </system>
+  <system name="gx4000">
+    <game gun="phaser">skeeshoot</game>
+    <game gun="phaser">theenforcer</game>
   </system>
   <system name="mastersystem">
     <game>assaultcity</game>
@@ -126,6 +154,20 @@
     <game>totheearth</game>
     <game>wildgunman</game>
     <game>zombiezap</game>
+  </system>
+  <system name="ps2">
+    <game>endgame</game>
+    <game>guncom2</game>
+    <game>gunfighter2jessejames</game>
+    <game>gunvaricollection</game>
+    <game>ninjaassault</game>
+    <game>timecrisisii</game>
+    <game>timecrisis2</game>
+    <game>timecrisis3</game>
+    <game>crisiszone</game>
+    <game>timecrisiscrisiszone</game>
+    <game>vampirenight</game>
+    <game>virtuacopeliteedition</game>
   </system>
   <system name="ps3">
     <game>childofeden</game>
@@ -227,6 +269,7 @@
     <game vertical_offset="14.5" yaw="22" pitch="22">heavyfireblackarms</game>
     <game vertical_offset="14.5" yaw="22" pitch="22">heavyfirespecialoperations</game>
     <game vertical_offset="15" yaw="19" pitch="19">houseofthedeadoverkill</game>
+    <game vertical_offset="15" yaw="19" pitch="19">houseofthedeadtheoverkill</game>
     <game vertical_offset="15" yaw="19" pitch="19">houseofthedead2and3</game>
     <game vertical_offset="15" yaw="18.8" pitch="19" ir_down="`Axis 1+`/1.02">maddogmccreegunslingerpack</game>
     <game vertical_offset="14.7" yaw="19" pitch="19">martianpanic</game>
@@ -239,8 +282,8 @@
     <game vertical_offset="14.6" yaw="30.7" pitch="18.9" ir_left="`Axis 0-`/1.22" ir_right="(`Axis 0+`+0.25)/1.23">remingtonsuperslamhuntingafrica</game>
     <game vertical_offset="14.6" yaw="30.7" pitch="18.9" ir_left="`Axis 0-`/1.22" ir_right="(`Axis 0+`+0.25)/1.23">remingtonsuperslamhuntingalaska</game>
     <game vertical_offset="14.7" yaw="18.6" pitch="18.8" ir_right="(`Axis 0+`+0.015)">remingtonsuperslamhuntingnorthamerica</game>
-    <game vertical_offset="0" yaw="20.6" pitch="15.75">residentevildarksidechronicles</game>
-    <game vertical_offset="15.2" yaw="15.3" pitch="11.7">residentevilumbrellachronicles</game>
+    <game vertical_offset="0" yaw="20.6" pitch="15.75">residentevilthedarksidechronicles</game>
+    <game vertical_offset="15.2" yaw="15.3" pitch="11.7">residenteviltheumbrellachronicles</game>
     <game vertical_offset="15.15" yaw="19.1" pitch="19.4">targetterror</game>
     <game vertical_offset="14.8" yaw="16.9" pitch="17">tomclancysghostrecon</game>
     <game vertical_offset="15" yaw="24.7" pitch="19">topshotarcade</game>

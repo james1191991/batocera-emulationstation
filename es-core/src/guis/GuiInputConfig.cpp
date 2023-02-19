@@ -8,21 +8,36 @@
 #include "Log.h"
 #include "Window.h"
 
-#define fake_gettext_up pgettext("joystick", "UP")
-#define fake_gettext_down pgettext("joystick", "DOWN")
-#define fake_gettext_left pgettext("joystick", "LEFT")
-#define fake_gettext_right pgettext("joystick", "RIGHT")
-#define fake_gettext_start pgettext("joystick", "START")
+#define fake_gettext_north pgettext("joystick", "NORTH")
+#define fake_gettext_south pgettext("joystick", "SOUTH")
+#define fake_gettext_east  pgettext("joystick", "EAST")
+#define fake_gettext_west  pgettext("joystick", "WEST")
+
+#define fake_gettext_start  pgettext("joystick", "START")
 #define fake_gettext_select pgettext("joystick", "SELECT")
-#define fake_gettext_left_a_up pgettext("joystick", "LEFT ANALOG UP")
-#define fake_gettext_left_a_down pgettext("joystick", "LEFT ANALOG DOWN")
-#define fake_gettext_left_a_left pgettext("joystick", "LEFT ANALOG LEFT")
-#define fake_gettext_left_a_right pgettext("joystick", "LEFT ANALOG RIGHT")
-#define fake_gettext_right_a_up pgettext("joystick", "RIGHT ANALOG UP")
-#define fake_gettext_right_a_down pgettext("joystick", "RIGHT ANALOG DOWN")
-#define fake_gettext_right_a_left pgettext("joystick", "RIGHT ANALOG LEFT")
+
+#define fake_gettext_up    pgettext("joystick", "D-PAD UP")
+#define fake_gettext_down  pgettext("joystick", "D-PAD DOWN")
+#define fake_gettext_left  pgettext("joystick", "D-PAD LEFT")
+#define fake_gettext_right pgettext("joystick", "D-PAD RIGHT")
+
+#define fake_gettext_left_a_up     pgettext("joystick", "LEFT ANALOG UP")
+#define fake_gettext_left_a_down   pgettext("joystick", "LEFT ANALOG DOWN")
+#define fake_gettext_left_a_left   pgettext("joystick", "LEFT ANALOG LEFT")
+#define fake_gettext_left_a_right  pgettext("joystick", "LEFT ANALOG RIGHT")
+#define fake_gettext_right_a_up    pgettext("joystick", "RIGHT ANALOG UP")
+#define fake_gettext_right_a_down  pgettext("joystick", "RIGHT ANALOG DOWN")
+#define fake_gettext_right_a_left  pgettext("joystick", "RIGHT ANALOG LEFT")
 #define fake_gettext_right_a_right pgettext("joystick", "RIGHT ANALOG RIGHT")
-#define fake_gettext_hotkey pgettext("joystick", "HOTKEY")
+
+#define fake_gettext_pageup   pgettext("joystick", "LEFT SHOULDER")
+#define fake_gettext_pagedown pgettext("joystick", "RIGHT SHOULDER")
+#define fake_gettext_l2       pgettext("joystick", "LEFT TRIGGER")
+#define fake_gettext_r2       pgettext("joystick", "RIGHT TRIGGER")
+#define fake_gettext_l3       pgettext("joystick", "LEFT STICK PRESS")
+#define fake_gettext_r3       pgettext("joystick", "RIGHT STICK PRESS")
+
+#define fake_gettext_hotkey        pgettext("joystick", "HOTKEY")
 
 //MasterVolUp and MasterVolDown are also hooked up, but do not appear on this screen.
 //If you want, you can manually add them to es_input.cfg.
@@ -33,31 +48,31 @@ void GuiInputConfig::initInputConfigStructure()
 {
 	GUI_INPUT_CONFIG_LIST =
 	{
-		{ "a",                false, InputConfig::buttonLabel("a"),    InputConfig::buttonImage("a") },
-		{ "b",                true,  InputConfig::buttonLabel("b"),    InputConfig::buttonImage("b") },
-		{ "x",                true,  "X",    ":/help/buttons_north.svg" },
-		{ "y",                true,  "Y",    ":/help/buttons_west.svg" },
+		{ "a",                false, InputConfig::buttonDisplayName("a"),    InputConfig::buttonImage("a") },
+		{ "b",                true,  InputConfig::buttonDisplayName("b"),    InputConfig::buttonImage("b") },
+		{ "x",                true,  "NORTH",              ":/help/buttons_north.svg" },
+		{ "y",                true,  "WEST",               ":/help/buttons_west.svg" },
 
 		{ "start",            true,  "START",              ":/help/button_start.svg" },
 		{ "select",           true,  "SELECT",             ":/help/button_select.svg" },
 
-		{ "up",               false, "UP",           ":/help/dpad_up.svg" },
-		{ "down",             false, "DOWN",         ":/help/dpad_down.svg" },
-		{ "left",             false, "LEFT",         ":/help/dpad_left.svg" },
-		{ "right",            false, "RIGHT",        ":/help/dpad_right.svg" },
+		{ "up",               false, "D-PAD UP",           ":/help/dpad_up.svg" },
+		{ "down",             false, "D-PAD DOWN",         ":/help/dpad_down.svg" },
+		{ "left",             false, "D-PAD LEFT",         ":/help/dpad_left.svg" },
+		{ "right",            false, "D-PAD RIGHT",        ":/help/dpad_right.svg" },
 
-		{ "pageup",          true,  "L1",      ":/help/button_l.svg" },
-		{ "pagedown",        true,  "R1",     ":/help/button_r.svg" },
+		{ "pageup",          true,  "LEFT SHOULDER",      ":/help/button_l.svg" },
+		{ "pagedown",        true,  "RIGHT SHOULDER",     ":/help/button_r.svg" },
 
 		{ "joystick1up",     true,  "LEFT ANALOG UP",     ":/help/analog_up.svg" },
 		{ "joystick1left",   true,  "LEFT ANALOG LEFT",   ":/help/analog_left.svg" },
 		{ "joystick2up",     true,  "RIGHT ANALOG UP",     ":/help/analog_up.svg" },
 		{ "joystick2left",   true,  "RIGHT ANALOG LEFT",   ":/help/analog_left.svg" },
 
-		{ "l2",              true,  "L2",       ":/help/button_lt.svg" },
-		{ "r2",              true,  "R2",      ":/help/button_rt.svg" },
-		{ "l3",              true,  "L3",       ":/help/analog_thumb.svg" },
-		{ "r3",              true,  "R3",      ":/help/analog_thumb.svg" },
+		{ "l2",              true,  "LEFT TRIGGER",       ":/help/button_lt.svg" },
+		{ "r2",              true,  "RIGHT TRIGGER",      ":/help/button_rt.svg" },
+		{ "l3",              true,  "LEFT STICK PRESS",       ":/help/analog_thumb.svg" },
+		{ "r3",              true,  "RIGHT STICK PRESS",      ":/help/analog_thumb.svg" },
 
 		{ "hotkey",          true,  "HOTKEY",      ":/help/button_hotkey.svg" }
 	};
